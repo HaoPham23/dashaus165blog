@@ -2,7 +2,7 @@
 title: Examplepost
 subtitle:
 date: 2023-03-02T23:23:22+07:00
-draft: true
+draft: false
 author:
   name:
   link:

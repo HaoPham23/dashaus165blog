@@ -8,7 +8,7 @@
 # See: https://fixit.lruihao.cn/documentation/basics/#menu-advanced-configuration
 # -------------------------------------------------------------------------------------
 theme = "FixIt"
-baseURL = "https://haopham23.github.io/"
+baseURL = "https://haopham23.github.io/dashaus165blog"
 publishDir = "docs"
 [menu]
   [[menu.main]]
