@@ -5,68 +5,13 @@
     <description>All Posts | </description>
     <generator>Hugo -- gohugo.io</generator><managingEditor>hao.pham165@gmail.com (dasHaus165)</managingEditor>
       <webMaster>hao.pham165@gmail.com (dasHaus165)</webMaster><lastBuildDate>Thu, 02 Mar 2023 23:23:22 &#43;0700</lastBuildDate><atom:link href="https://haopham23.github.io/dashaus165blog/posts/" rel="self" type="application/rss+xml" /><item>
-  <title>Eigenvalues and Eigenvectors</title>
-  <link>https://haopham23.github.io/dashaus165blog/posts/mathematic/eigenvalues_and_eigenvectors/</link>
+  <title>Introduction to Finite Fields</title>
+  <link>https://haopham23.github.io/dashaus165blog/posts/mathematics/eigenvalues_and_eigenvectors/</link>
   <pubDate>Thu, 02 Mar 2023 23:23:22 &#43;0700</pubDate>
   <author>dasHaus165</author>
-  <guid>https://haopham23.github.io/dashaus165blog/posts/mathematic/eigenvalues_and_eigenvectors/</guid>
-  <description><![CDATA[<div class="details admonition note open">
-    <div class="details-summary admonition-title">
-      <i class="icon fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
-    </div>
-    <div class="details-content">
-      <div class="admonition-content">This article is written by chatGPT. This is for catergories testing purpose.</div>
-    </div>
-  </div>
-<h1 id="introduction-to-eigenvalues-and-eigenvectors">Introduction to Eigenvalues and Eigenvectors</h1>
-<p>Eigenvalues and eigenvectors are important concepts in linear algebra that are used to study transformations and matrices. They are particularly useful in applications such as physics, engineering, and computer graphics.</p>
-<p>Definition of Eigenvalues and Eigenvectors
-Let A be an n x n matrix. An eigenvector of A is a non-zero vector x that satisfies the following equation:</p>
-<p>$$A\mathbf{x} = \lambda \mathbf{x}$$</p>
-<p>where $\lambda$ is a scalar called the eigenvalue corresponding to x.</p>
-<p>In other words, when A is multiplied by an eigenvector x, the result is a scaled version of x. The scaling factor is the corresponding eigenvalue $\lambda$.</p>
-<h2 id="examples-of-eigenvalues-and-eigenvectors">Examples of Eigenvalues and Eigenvectors</h2>
-<p>Consider the following 2 x 2 matrix A:</p>
-<p>$$A = \begin{pmatrix} 2 &amp; 1 \ 1 &amp; 2 \end{pmatrix}$$</p>
-<p>To find the eigenvalues and eigenvectors of A, we solve the equation:</p>
-<p>$$(A - \lambda I)\mathbf{x} = \mathbf{0}$$</p>
-<p>where I is the identity matrix and $\mathbf{0}$ is the zero vector. This leads to the following characteristic equation:</p>
-<p>$$(2 - \lambda)(2 - \lambda) - 1 = 0$$</p>
-<p>Solving for $\lambda$, we get $\lambda_1 = 3$ and $\lambda_2 = 1$. To find the corresponding eigenvectors, we substitute each eigenvalue into the original equation:</p>
-<p>$$(A - 3I)\mathbf{x}_1 = \mathbf{0}$$</p>
-<p>$$(A - I)\mathbf{x}_2 = \mathbf{0}$$</p>
-<p>Solving these equations, we get:</p>
-<p>$$\mathbf{x}_1 = \begin{pmatrix} 1 \ -1 \end{pmatrix} \quad \text{and} \quad \mathbf{x}_2 = \begin{pmatrix} 1 \ 1 \end{pmatrix}$$</p>
-<p>These eigenvectors are scaled by their corresponding eigenvalues:</p>
-<p>$$A\mathbf{x}_1 = 3\mathbf{x}_1 \quad \text{and} \quad A\mathbf{x}_2 = \mathbf{x}_2$$</p>
-<h1 id="endbmatrix">$$
-\begin{bmatrix}
-a_{11} &amp; a_{12} &amp; \dots  &amp; a_{1n} \
-a_{21} &amp; a_{22} &amp; \dots  &amp; a_{2n} \
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots \
-a_{m1} &amp; a_{m2} &amp; \dots  &amp; a_{mn}
-\end{bmatrix}
-\begin{bmatrix}
-x_{1} \
-x_{2} \
-\vdots \
-x_{n}
-\end{bmatrix}</h1>
-<p>\begin{bmatrix}
-b_{1} \
-b_{2} \
-\vdots \
-b_{m}
-\end{bmatrix}
-$$</p>
-<h2 id="properties-of-eigenvalues-and-eigenvectors">Properties of Eigenvalues and Eigenvectors</h2>
-<p>There are several important properties of eigenvalues and eigenvectors that are useful in applications:</p>
-<p>The sum of the eigenvalues of a matrix A is equal to the trace of A (the sum of the diagonal elements).
-The product of the eigenvalues of A is equal to the determinant of A.
-If A is symmetric, then its eigenvectors are orthogonal to each other.
-If A is invertible, then its eigenvectors form a basis for the space.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>Eigenvalues and eigenvectors are important tools in linear algebra that allow us to study transformations and matrices in a more systematic way. They have many practical applications in fields such as physics, engineering, and computer graphics. By understanding the properties of eigenvalues and eigenvectors, we can gain insight into the behavior of complex systems and make predictions based on data.</p>]]></description>
+  <guid>https://haopham23.github.io/dashaus165blog/posts/mathematics/eigenvalues_and_eigenvectors/</guid>
+  <description><![CDATA[NoteThis article is written by chatGPT. This is for catergories testing purpose.Introduction to Finite Fields Finite fields, also known as Galois fields, are algebraic structures that are widely used in many areas of mathematics, including cryptography, coding theory, and number theory. In this article, we will introduce the basics of finite fields and explore some of their properties.
+Definition A finite field is a field that contains a finite number of elements.]]></description>
 </item>
 <item>
   <title>Introduction to Quantum Physics</title>

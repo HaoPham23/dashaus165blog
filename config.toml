@@ -150,7 +150,7 @@ defaultContentLanguage = "en"
     # FixIt 0.2.0 | NEW Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = "/avatar.png"
+      logo = "/dashaus165blog/avatar.png"
       # title name
       name = "dasHaus165"
       # you can add extra information before the name (HTML format is supported), such as icons
@@ -245,7 +245,7 @@ defaultContentLanguage = "en"
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/avatar.png"
+      avatarURL = "/dashaus165blog/avatar.png"
       # FixIt 0.2.17 | NEW identifier of avatar menu link
       avatarMenu = ""
       # FixIt 0.2.7 | CHANGED title shown in home page (HTML format is supported)
