@@ -1,8 +1,8 @@
 ---
-title: Examplepost
+title: First Post
 subtitle:
-date: 2023-03-03T23:23:22+07:00
-draft: false
+date: 2023-03-02T23:23:22+07:00
+draft: true
 author:
   name:
   link:
@@ -38,4 +38,6 @@ repost:
 ---
 
 This is an example post.
+
+
 <!--more-->

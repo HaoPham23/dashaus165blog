@@ -9,6 +9,7 @@
 # -------------------------------------------------------------------------------------
 theme = "FixIt"
 baseURL = "https://haopham23.github.io/dashaus165blog"
+# baseURL = "https://haopham23.github.io"
 publishDir = "docs"
 [menu]
   [[menu.main]]
@@ -32,16 +33,16 @@ publishDir = "docs"
       icon = "fa-solid fa-archive"
       # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
       type = ""
-  [[menu.main]]
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "Categories"
-    url = "/categories/"
-    title = ""
-    weight = 2
-    [menu.main.params]
-      icon = "fa-solid fa-th"
+  # [[menu.main]]
+  #   identifier = "categories"
+  #   pre = ""
+  #   post = ""
+  #   name = "Categories"
+  #   url = "/categories/"
+  #   title = ""
+  #   weight = 2
+  #   [menu.main.params]
+  #     icon = "fa-solid fa-th"
   [[menu.main]]
     identifier = "tags"
     pre = ""
@@ -52,6 +53,16 @@ publishDir = "docs"
     weight = 3
     [menu.main.params]
       icon = "fa-solid fa-tags"
+  [[menu.main]]
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "About"
+    url = "/about/"
+    title = ""
+    weight = 4
+    [menu.main.params]
+      icon = "fa-solid fa-id-card"
 
 # -------------------------------------------------------------------------------------
 # Theme Core Configuration
@@ -143,15 +154,15 @@ publishDir = "docs"
     # FixIt 0.2.0 | NEW Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = "/fixit.min.svg"
+      logo = "/avatar.jpg"
       # title name
-      name = "My Hugo FixIt Site"
+      name = "dasHaus165"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
       # FixIt 0.2.5 | NEW whether to use typeit animation for title name
-      typeit = false
+      typeit = true
     # FixIt 0.2.12 | NEW Header subtitle config
     [params.header.subtitle]
       # subtitle name
@@ -166,13 +177,13 @@ publishDir = "docs"
     # For advanced use, see parameter `params.customFilePath.footer`
     custom = ""
     # FixIt 0.2.0 | NEW whether to show Hugo and theme info
-    hugo = true
+    hugo = false
     # FixIt 0.2.0 | NEW whether to show copyright info
     copyright = true
     # FixIt 0.2.0 | NEW whether to show the author
     author = true
     # Site creation year
-    since = ""
+    since = "2023"
     # FixIt 0.2.14 | NEW whether to show total word count of site content
     wordCount = true
     # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
@@ -234,17 +245,17 @@ publishDir = "docs"
     rss = 10
     # Home page profile
     [params.home.profile]
-      enable = false
+      enable = true
       # Gravatar Email for preferred avatar in home page
-      gravatarEmail = ""
+      gravatarEmail = "phamduchao2k3@gmail.com"
       # URL of avatar shown in home page
-      avatarURL = ""
+      avatarURL = "/avatar.jpg"
       # FixIt 0.2.17 | NEW identifier of avatar menu link
       avatarMenu = ""
       # FixIt 0.2.7 | CHANGED title shown in home page (HTML format is supported)
-      title = ""
+      title = "Hi"
       # subtitle shown in home page
-      subtitle = ""
+      subtitle = "I told a chemistry joke, but there was no reaction. :)"
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links
@@ -259,11 +270,11 @@ publishDir = "docs"
 
   # FixIt 0.2.16 | CHANGED Social config about the author
   [params.social]
-    GitHub = ""
-    Linkedin = ""
+    GitHub = "https://github.com/HaoPham23"
+    Linkedin = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     Twitter = ""
     Instagram = ""
-    Facebook = ""
+    Facebook = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     Telegram = ""
     Medium = ""
     Gitlab = ""
@@ -330,7 +341,7 @@ publishDir = "docs"
     QQGroup = "" # https://qun.qq.com/join.html
     Diaspora = ""
     CSDN = ""
-    Discord = ""
+    Discord = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     DiscordInvite = ""
     Lichess = ""
     Pleroma = ""
@@ -343,9 +354,9 @@ publishDir = "docs"
     TryHackMe = ""
     Douyin = ""
     TikTok = ""
-    Phone = ""
-    Email = ""
-    RSS = true
+    Phone = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    Email = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    RSS = false
 
   # FixIt 0.2.0 | CHANGED Page config
   [params.page]
@@ -485,7 +496,7 @@ publishDir = "docs"
       Digg = false
       Stumbleupon = false
       Flipboard = false
-      Weibo = true
+      Weibo = false
       Renren = false
       Myspace = false
       Blogger = false
@@ -645,13 +656,13 @@ publishDir = "docs"
   # FixIt 0.2.5 | NEW TypeIt config
   [params.typeit]
     # typing speed between each step (measured in milliseconds)
-    speed = 100
+    speed = 50
     # blinking speed of the cursor (measured in milliseconds)
     cursorSpeed = 1000
     # character used for the cursor (HTML format is supported)
     cursorChar = "|"
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
-    duration = -1
+    duration = 50
 
   # FixIt 0.2.15 | NEW Mermaid config
   [params.mermaid]
