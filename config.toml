@@ -11,6 +11,13 @@ theme = "FixIt"
 baseURL = "https://haopham23.github.io/dashaus165blog"
 # baseURL = "https://haopham23.github.io"
 publishDir = "docs"
+defaultContentLanguage = "en"
+# Author config
+[author]
+  name = "dasHaus165"
+  email = "hao.pham165@gmail.com"
+  link = "https://haopham23.github.io/dashaus165blog/"
+
 [menu]
   [[menu.main]]
     identifier = "posts"
@@ -33,16 +40,16 @@ publishDir = "docs"
       icon = "fa-solid fa-archive"
       # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
       type = ""
-  # [[menu.main]]
-  #   identifier = "categories"
-  #   pre = ""
-  #   post = ""
-  #   name = "Categories"
-  #   url = "/categories/"
-  #   title = ""
-  #   weight = 2
-  #   [menu.main.params]
-  #     icon = "fa-solid fa-th"
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 2
+    [menu.main.params]
+      icon = "fa-solid fa-th"
   [[menu.main]]
     identifier = "tags"
     pre = ""
@@ -98,7 +105,7 @@ publishDir = "docs"
   # FixIt 0.2.0 | NEW App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "FixIt"
+    title = "dasHaus165's Blog"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
@@ -114,36 +121,25 @@ publishDir = "docs"
 
   # FixIt 0.2.0 | NEW Search config
   [params.search]
-    enable = false
-    # type of search engine ["lunr", "algolia", "fuse"]
-    type = "lunr"
+    enable = true
+    # type of search engine ["lunr", "algolia"]
+    type = "algolia"
     # max index length of the chunked content
     contentLength = 4000
     # placeholder of the search bar
     placeholder = ""
-    # FixIt 0.2.1 | NEW max number of results length
+    #  max number of results length
     maxResultLength = 10
-    # FixIt 0.2.3 | NEW snippet length of the result
+    #  snippet length of the result
     snippetLength = 30
-    # FixIt 0.2.1 | NEW HTML tag name of the highlight part in results
+    #  HTML tag name of the highlight part in results
     highlightTag = "em"
-    # FixIt 0.2.4 | NEW whether to use the absolute URL based on the baseURL in search index
+    #  whether to use the absolute URL based on the baseURL in search index
     absoluteURL = false
     [params.search.algolia]
       index = ""
       appID = ""
       searchKey = ""
-    [params.search.fuse]
-      # FixIt 0.2.17 | NEW https://fusejs.io/api/options.html
-      isCaseSensitive = false
-      minMatchCharLength = 2
-      findAllMatches = false
-      location = 0
-      threshold = 0.3
-      distance = 100
-      ignoreLocation = false
-      useExtendedSearch = false
-      ignoreFieldNorm = false
 
   # Header config
   [params.header]
@@ -183,7 +179,7 @@ publishDir = "docs"
     # FixIt 0.2.0 | NEW whether to show the author
     author = true
     # Site creation year
-    since = "2023"
+    since = "Copy, right?"
     # FixIt 0.2.14 | NEW whether to show total word count of site content
     wordCount = true
     # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
@@ -270,11 +266,11 @@ publishDir = "docs"
 
   # FixIt 0.2.16 | CHANGED Social config about the author
   [params.social]
-    GitHub = "https://github.com/HaoPham23"
-    Linkedin = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    GitHub = "HaoPham23"
+    Linkedin = "hao-pham-duc-42b09b240"
     Twitter = ""
     Instagram = ""
-    Facebook = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    Facebook = "pham.hao.58511"
     Telegram = ""
     Medium = ""
     Gitlab = ""
@@ -341,7 +337,7 @@ publishDir = "docs"
     QQGroup = "" # https://qun.qq.com/join.html
     Diaspora = ""
     CSDN = ""
-    Discord = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    Discord = ""
     DiscordInvite = ""
     Lichess = ""
     Pleroma = ""
@@ -354,8 +350,8 @@ publishDir = "docs"
     TryHackMe = ""
     Douyin = ""
     TikTok = ""
-    Phone = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-    Email = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    Phone = ""
+    Email = "hao.pham1652003@gmail.com"
     RSS = false
 
   # FixIt 0.2.0 | CHANGED Page config
@@ -762,11 +758,11 @@ publishDir = "docs"
 
   # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
   [params.githubCorner]
-    enable = false
-    permalink = "https://github.com/hugo-fixit/FixIt"
+    enable = true
+    permalink = "https://github.com/HaoPham23"
     title = "View source on GitHub"
     position = "right" # ["left", "right"]
-
+  
   # FixIt 0.2.14 | NEW Gravatar config
   [params.gravatar]
     # FixIt 0.2.18 | NEW Depends on the author's email, if the author's email is not set, the local avatar will be used
@@ -783,7 +779,7 @@ publishDir = "docs"
 
   # FixIt 0.2.16 | NEW Reading progress bar
   [params.readingProgress]
-    enable = false
+    enable = true
     # Available values: ["left", "right"]
     start = "left"
     # Available values: ["top", "bottom"]
