@@ -12,7 +12,7 @@ math:
 
 ## Some Background Informations
 
-I am **Hao Pham-Duc (dasHaus165)**, a Cryptographer from team BKISC, Ho Chi Minh City University of Technology (HCMUT).
+I am **Hao Pham-Duc (dasHaus165)**, a Cryptographer from the Bach Khoa Information Security Club **(BKISC)**, Ho Chi Minh City University of Technology **(HCMUT)**.
 
 ## Interests
 

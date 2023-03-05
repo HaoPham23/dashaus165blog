@@ -9,6 +9,7 @@
 # -------------------------------------------------------------------------------------
 theme = "FixIt"
 baseURL = "https://haopham23.github.io/dashaus165blog"
+relativeURLs = false
 # baseURL = "https://haopham23.github.io"
 publishDir = "docs"
 defaultContentLanguage = "en"
@@ -122,24 +123,36 @@ defaultContentLanguage = "en"
   # FixIt 0.2.0 | NEW Search config
   [params.search]
     enable = true
-    # type of search engine ["lunr", "algolia"]
-    type = "algolia"
+    # type of search engine ["lunr", "algolia", "fuse"]
+    type = "lunr"
     # max index length of the chunked content
     contentLength = 4000
     # placeholder of the search bar
     placeholder = ""
-    #  max number of results length
+    # FixIt 0.2.1 | NEW max number of results length
     maxResultLength = 10
-    #  snippet length of the result
+    # FixIt 0.2.3 | NEW snippet length of the result
     snippetLength = 30
-    #  HTML tag name of the highlight part in results
+    # FixIt 0.2.1 | NEW HTML tag name of the highlight part in results
     highlightTag = "em"
-    #  whether to use the absolute URL based on the baseURL in search index
+    # FixIt 0.2.4 | NEW whether to use the absolute URL based on the baseURL in search index
     absoluteURL = false
     [params.search.algolia]
       index = ""
       appID = ""
       searchKey = ""
+    [params.search.fuse]
+      # FixIt 0.2.17 | NEW https://fusejs.io/api/options.html
+      isCaseSensitive = false
+      minMatchCharLength = 2
+      findAllMatches = false
+      location = 0
+      threshold = 0.3
+      distance = 100
+      ignoreLocation = false
+      useExtendedSearch = false
+      ignoreFieldNorm = false
+
 
   # Header config
   [params.header]
@@ -181,7 +194,7 @@ defaultContentLanguage = "en"
     # Site creation year
     since = "Copy, right?"
     # FixIt 0.2.14 | NEW whether to show total word count of site content
-    wordCount = true
+    wordCount = false
     # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
     gov = ""
     # ICP info only in China (HTML format is supported)
@@ -385,7 +398,7 @@ defaultContentLanguage = "en"
     # If true, save the reading progress when closing the page.
     autoBookmark = false
     # FixIt 0.2.17 | NEW whether to enable wordCount
-    wordCount = true
+    wordCount = false
     # FixIt 0.2.17 | NEW whether to enable readingTime
     readingTime = true
     # FixIt 0.2.17 | NEW end of post flag
