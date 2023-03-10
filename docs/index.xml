@@ -4,9 +4,17 @@
     <link>https://haopham23.github.io/dashaus165blog/</link>
     <description>dasHaus165&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator><managingEditor>hao.pham165@gmail.com (dasHaus165)</managingEditor>
-      <webMaster>hao.pham165@gmail.com (dasHaus165)</webMaster><lastBuildDate>Fri, 10 Mar 2023 09:49:37 &#43;0700</lastBuildDate>
+      <webMaster>hao.pham165@gmail.com (dasHaus165)</webMaster><lastBuildDate>Fri, 10 Mar 2023 12:17:30 &#43;0700</lastBuildDate>
       <atom:link href="https://haopham23.github.io/dashaus165blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+  <title>nullcon HackIM CTF Berlin 2023: collector</title>
+  <link>https://haopham23.github.io/dashaus165blog/collector/</link>
+  <pubDate>Fri, 10 Mar 2023 12:17:30 &#43;0700</pubDate>
+  <author>dasHaus165</author>
+  <guid>https://haopham23.github.io/dashaus165blog/collector/</guid>
+  <description><![CDATA[<p>A writeup on nullcon CTF 2023 - Collector</p>]]></description>
+</item>
+<item>
   <title>nullcon HackIM CTF Berlin 2023: breaking news</title>
   <link>https://haopham23.github.io/dashaus165blog/breaking-news/</link>
   <pubDate>Fri, 10 Mar 2023 09:49:37 &#43;0700</pubDate>
@@ -22,14 +30,6 @@
   <guid>https://haopham23.github.io/dashaus165blog/eigenvalues_and_eigenvectors/</guid>
   <description><![CDATA[NoteThis article is written by chatGPT. This is for catergories testing purpose.Introduction to Finite Fields Finite fields, also known as Galois fields, are algebraic structures that are widely used in many areas of mathematics, including cryptography, coding theory, and number theory. In this article, we will introduce the basics of finite fields and explore some of their properties.
 Definition A finite field is a field that contains a finite number of elements.]]></description>
-</item>
-<item>
-  <title>Introduction to Quantum Physics</title>
-  <link>https://haopham23.github.io/dashaus165blog/introduction_to_quantum_physics.md/</link>
-  <pubDate>Thu, 02 Mar 2023 23:23:22 &#43;0700</pubDate>
-  <author>dasHaus165</author>
-  <guid>https://haopham23.github.io/dashaus165blog/introduction_to_quantum_physics.md/</guid>
-  <description><![CDATA[NoteThis article is written by chatGPT. This is for catergories testing purpose.Introduction to Quantum Physics Quantum physics is a branch of physics that deals with the behavior of matter and energy at the atomic and subatomic level. It is a fundamental theory that describes the behavior of particles such as electrons, protons, and photons. Unlike classical physics, which is based on the laws of classical mechanics, quantum physics is based on the laws of quantum mechanics, which are fundamentally different from classical mechanics.]]></description>
 </item>
 </channel>
 </rss>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>nullcon HackIM CTF Berlin 2023: collector - dasHaus165&#39;s Blog</title><meta name="author" content="dasHaus165">
+<meta name="author-link" content="https://haopham23.github.io/dashaus165blog/">
+<meta name="description" content="A writeup on nullcon CTF 2023 - Collector" /><meta name="keywords" content='writeups, crypto, nullcon2023' /><meta itemprop="name" content="nullcon HackIM CTF Berlin 2023: collector">
+<meta itemprop="description" content="A writeup on nullcon CTF 2023 - Collector"><meta itemprop="datePublished" content="2023-03-10T12:17:30+07:00" />
+<meta itemprop="dateModified" content="2023-03-10T12:17:30+07:00" />
+<meta itemprop="wordCount" content="693">
+<meta itemprop="keywords" content="writeups,crypto,nullcon2023," /><meta property="og:title" content="nullcon HackIM CTF Berlin 2023: collector" />
+<meta property="og:description" content="A writeup on nullcon CTF 2023 - Collector" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://haopham23.github.io/dashaus165blog/collector/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-10T12:17:30+07:00" />
+<meta property="article:modified_time" content="2023-03-10T12:17:30+07:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="nullcon HackIM CTF Berlin 2023: collector"/>
+<meta name="twitter:description" content="A writeup on nullcon CTF 2023 - Collector"/>
+<meta name="application-name" content="dasHaus165&#39;s Blog">
+<meta name="apple-mobile-web-app-title" content="dasHaus165&#39;s Blog"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/dashaus165blog/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/dashaus165blog/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/dashaus165blog/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/dashaus165blog/apple-touch-icon.png"><link rel="mask-icon" href="/dashaus165blog/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/dashaus165blog/site.webmanifest"><link rel="canonical" href="https://haopham23.github.io/dashaus165blog/collector/" /><link rel="prev" href="https://haopham23.github.io/dashaus165blog/breaking-news/" /><link rel="stylesheet" href="/dashaus165blog/css/style.min.css"><link rel="stylesheet" href="/dashaus165blog/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/dashaus165blog/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "nullcon HackIM CTF Berlin 2023: collector",
+    "inLanguage": "",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/haopham23.github.io\/dashaus165blog\/collector\/"
+    },"genre": "posts","keywords": "writeups, crypto, nullcon2023","wordcount":  693 ,
+    "url": "https:\/\/haopham23.github.io\/dashaus165blog\/collector\/","datePublished": "2023-03-10T12:17:30+07:00","dateModified": "2023-03-10T12:17:30+07:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "dasHaus165"
+      },"description": "A writeup on nullcon CTF 2023 - Collector"
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper" data-github-corner="right">
+    <div class="header-title">
+      <a href="/dashaus165blog/" title="dasHaus165&#39;s Blog"><img loading="lazy" src="/dashaus165blog/avatar.png" srcset="/dashaus165blog/avatar.png, /dashaus165blog/avatar.png 1.5x, /dashaus165blog/avatar.png 2x" sizes="auto" data-title="dasHaus165&#39;s Blog" data-alt="dasHaus165&#39;s Blog" class="logo" style="background: url(/dashaus165blog/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span id="typeit-header-desktop" class="typeit"></span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/dashaus165blog/posts/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/dashaus165blog/categories/"
+                
+                
+              ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/dashaus165blog/tags/"
+                
+                
+              ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/dashaus165blog/about/"
+                
+                
+              ><i class="fa-solid fa-id-card fa-fw fa-sm" aria-hidden="true"></i> About</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/dashaus165blog/" title="dasHaus165&#39;s Blog"><img loading="lazy" src="/dashaus165blog/avatar.png" srcset="/dashaus165blog/avatar.png, /dashaus165blog/avatar.png 1.5x, /dashaus165blog/avatar.png 2x" sizes="auto" data-title="/dashaus165blog/avatar.png" data-alt="/dashaus165blog/avatar.png" class="logo" style="background: url(/dashaus165blog/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span id="typeit-header-title-mobile" class="typeit"></span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/dashaus165blog/posts/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/dashaus165blog/categories/"
+                  
+                  
+                ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/dashaus165blog/tags/"
+                  
+                  
+                ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/dashaus165blog/about/"
+                  
+                  
+                ><i class="fa-solid fa-id-card fa-fw fa-sm" aria-hidden="true"></i> About</a></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="normal"><aside class="toc" id="toc-auto"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX">
+        <span>nullcon HackIM CTF Berlin 2023: collector</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://haopham23.github.io/dashaus165blog/" title="Author"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+    dasHaus165</a></span>
+          <span class="post-category">included in <a href="/dashaus165blog/categories/writeups/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Writeups</a></span></div>
+      <div class="post-meta-line"><span title=2023-03-10&#32;12:17:30><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-10">2023-03-10</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 693 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 4 minutes</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#find-the-message">Find the message</a></li>
+    <li><a href="#unpad-the-message">Unpad the message</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>A writeup on nullcon CTF 2023 - Collector</p>
+<div class="details admonition note open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i>Challenge Information<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content"><ul>
+<li><strong>Given materials:</strong> <a href="https://ctf.nullcon.net/files/ad34e47d2ea3b9c0105e3eb596a78983/collector.zip?token=eyJ1c2VyX2lkIjoxNDkyLCJ0ZWFtX2lkIjpudWxsLCJmaWxlX2lkIjo0Mn0.ZAq-Tw.gAvijOgKDno8j5MDVIwcJLuffGE"target="_blank" rel="external nofollow noopener noreferrer">Get it here!</a></li>
+<li><strong>Host:</strong> 52.59.124.14:10005</li>
+<li><strong>Description:</strong> Alice started to encrypt the flag, but realised halfway she was unhappy with her key. So she created a new one.</li>
+<li><strong>Category:</strong> Crypto</li>
+</ul>
+</div>
+    </div>
+  </div>
+<p>The encyption code is shown below:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.PublicKey</span> <span class="kn">import</span> <span class="n">RSA</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="n">bytes_to_long</span><span class="p">,</span> <span class="n">long_to_bytes</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">hashlib</span> <span class="kn">import</span> <span class="n">sha256</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">secret</span> <span class="kn">import</span> <span class="n">flag</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Parameters</span>
+</span></span><span class="line"><span class="cl"><span class="n">N</span> <span class="o">=</span> <span class="mi">2048</span>
+</span></span><span class="line"><span class="cl"><span class="n">hLen</span> <span class="o">=</span> <span class="mi">256</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">MGF</span><span class="p">(</span><span class="n">seed</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	<span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">length</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">pad</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span> <span class="n">bitlength</span><span class="p">,</span> <span class="n">tag</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	<span class="n">seed</span> <span class="o">=</span> <span class="n">sha256</span><span class="p">(</span><span class="n">stream</span><span class="p">)</span><span class="o">.</span><span class="n">digest</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="n">DB</span> <span class="o">=</span> <span class="n">sha256</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span><span class="o">.</span><span class="n">digest</span><span class="p">()</span> <span class="o">+</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x00</span><span class="s1">&#39;</span> <span class="o">*</span> <span class="p">((</span><span class="n">bitlength</span> <span class="o">-</span> <span class="mi">16</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">hLen</span><span class="p">)</span> <span class="o">//</span> <span class="mi">8</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">stream</span><span class="p">))</span> <span class="o">+</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x01</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">stream</span>
+</span></span><span class="line"><span class="cl">	<span class="n">mask</span> <span class="o">=</span> <span class="n">MGF</span><span class="p">(</span><span class="n">seed</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">DB</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">	<span class="n">maskedDB</span> <span class="o">=</span> <span class="p">[</span><span class="n">DB</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">^</span> <span class="n">mask</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">DB</span><span class="p">))]</span>
+</span></span><span class="line"><span class="cl">	<span class="n">seedmask</span> <span class="o">=</span> <span class="n">MGF</span><span class="p">(</span><span class="n">bytes_to_long</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="n">maskedDB</span><span class="p">)),</span> <span class="n">hLen</span> <span class="o">//</span> <span class="mi">8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="n">masked_seed</span> <span class="o">=</span> <span class="p">[</span><span class="n">seed</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">^</span> <span class="n">seedmask</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">hLen</span> <span class="o">//</span> <span class="mi">8</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">	<span class="n">EM</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">masked_seed</span> <span class="o">+</span> <span class="n">maskedDB</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="nb">bytes</span><span class="p">(</span><span class="n">EM</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">key</span> <span class="o">=</span> <span class="n">RSA</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">e</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">)))</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span> <span class="o">=</span> <span class="n">pad</span><span class="p">(</span><span class="n">flag</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">cipher</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">bytes_to_long</span><span class="p">(</span><span class="n">msg</span><span class="p">),</span> <span class="n">key</span><span class="o">.</span><span class="n">e</span><span class="p">,</span> <span class="n">key</span><span class="o">.</span><span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="o">.</span><span class="n">publickey</span><span class="p">()</span><span class="o">.</span><span class="n">export_key</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">cipher</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Every time we connect to the host (via netcat or sth), we will receive a different ciphertext encrypted by a random modulus and public key. Note that the message is not change. Our work is finding the message, then unpad it.</p>
+<p>The padding scheme is a little bit complicated. We will kill it later. At first we will retrieve the message.</p>
+<h2 id="find-the-message">Find the message</h2>
+<p>Look at the randomization of public key <code>e = (1&lt;&lt;(1&lt;&lt;random.randint(0,4))) + 1</code>. This means <code>e</code> must be equal to $2^{2^x} + 1$ for some integers $x \in [0, 4]$. At some times <code>e</code> could be very small like 3 or 5. Because the message is unchanged, we can use the Chinese Remainder Theorem (CRT) to break this when gathering enough ciphertexts. I repeatedly connected to the remote until having 3 ciphertexts with <code>e = 3</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">e</span> <span class="o">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="n">N</span> <span class="o">=</span> <span class="p">[</span><span class="mi">28381641470468894491803213061106255342394785960384941880077041220424858882243977178327833510813856252123826746136803591828086299475087806054298840171844435617137577385214546313958620567553253217307660746834119848698440453807137028548358408609717898329618640526221733866656561521129647023240413028643353478087055828259789123943016979435211452647807696304538852270445595330922933463828624035948430989311305830380036909110401405096121447796742654166842393747308740780904196329123383973796349621094915042791540207331450449802592104266984813731468139429699360268971982017419995340593646178732193351256580686583645074686481</span><span class="p">,</span> <span class="mi">28436672769421092594548202063747136916010694256439596421267256338356642110615214295636290262174422091110004588277589357833064734842830005906601043923191160888729742432170304483250917430300469828737729147336593221799075533669151807403536631518772213122496331705583686028383255398390202874974738970297256383620164410474840284541812020710089537740738125841696533411618103247902091800590243557503164318811200241072268218187996587800580083415291553258227269481299061378559085130925905173961445149171436522574889242127165031893466792518949839440702289685992727216675856642620509410556237355496471530737288787259785052322993</span><span class="p">,</span> <span class="mi">25412404546346468305392035193378764251619897130524613049803135516536070315326552786305399441669596628056673371439515815781250907753718067067226518798529940898970567077537254185822862662220847912618660781287259157242149100209572603742637992436899975356747571153179206867731331643050831867936881069006927570181727198234072053231467970543502983704951535677566284955370022801304229992130157161656559459468967395896136014632983809461559912693283225883003846877844569910763540763884040047237999313928073272402379600504681309154175040711570175227656258694170595021901919042033878632991260113162504162300983314586289440358641</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="mh">0xdfccaaeb5849c7e9b01d597255e1e77b3d6d441560e523074d024c79dfb61484c821c36e4f7ff4ca164cfd6112c904943a35926c7dffcd095567cf6421a027e83adcfa63be84a2407c5bd27d9e66679bb18d638cfb842301001ec0c760d455f376882f286b8f684a3b9270d4b9cd7288c21a983cb4364866e2553bacfd07b486a54fb0ea68f97c538aa83ec50074cb1d39277aa9976e6e29fbcc497ef1bcbea19029139c94f127c48092105f1fdd70cd007dfc70b853a999c6b1869573fdef7a53c1e2161734d13e3960a3c8b07f08098e2e197d2727cd6eadcc6b1132162ea4165c69f681bc30bf50fcfa98316ccddf4b2680d11017b53fd848899cac536476</span><span class="p">,</span> <span class="mh">0x9c75253abd2f6112ccf8dc68b94a636dab7b97dbee4e827c458c53ef0ec07f88e9198c7c4c0bc2b12c045268dff6b7f4902315644112c80602fb234721cf17294bd5aac3bfac2260037bd1442198ad31b2654b8fdbf91df94cc18c761288e092a86f40abfa417a6ce29ef993a8454b001889f2b4fd3af240adb6ecdf18b1055ff1713b12a2163f6bf9421db1709863e5557354acd6cf4b806f9cb7252750a5654ba30da2a58e64c7116d7a97bdeb428cf1041e6506f989ee785313827ed054ba9da7064fcc1cdaf4550de966a1cf6a043d5870c80f182876e3cb78fb40ef1d90d32499c838e4f7da0b0fc0c3365384040eca1beb2879438f8aa6893439eb6241</span><span class="p">,</span> <span class="mh">0x39d8ca6d816ae44c9c5785265ed276fc162e3c09d16a83398975af4b41e80e794acbb2ff2514b78d9de37933f89fc4df30f5eea0a58338d0b6390d72f33acd62587aec18b0a9f03627ae368b6f7c6243853084fe27f72cc3b7fd2eabee080cbb73d9bd561d566c2443aca2dadf0340d5cd69a7c18071c79345600239417ce8ec81b24b52b23f42e95e2d1c0cd40c9fb5b6c984ab7971a843f8d29cff2768f8df6b051d4f804bd858e6b8963c987dc39c9d03ef447b43991c4a6851e027b8479aa092e91b46803507a330915b71450b8e0e3714b92c1f8bc0b9b363de8565b48a68616f0aedf9e64b588828cff530c909dabf889decaead068de12aee635ad14e</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>So we have $c_i$ sastifies $c_i \equiv \text{msg}^3 \text{ (mod }N_i)$ for $i = 0, 1, 2$.</p>
+<p>Then using CRT to find $X$ that sastifies $X \equiv \text{msg}^3 \text{ (mod }N_0.N_1.N_2)$</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sympy.ntheory.modular</span> <span class="kn">import</span> <span class="n">crt</span>
+</span></span><span class="line"><span class="cl"><span class="n">X</span> <span class="o">=</span> <span class="n">crt</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">c</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># X = 114327365211462638783630957997053357739815907281310276341298451760344518930676671501926485178368245210315852500298627197206021282920674970430991780102198546374072738653038581574228025093043594960668159535998784903531800031268963088320198522590874009543712007963270249078921331261913709109858154932372039871156009745442600373424849725961072759171261911309683504125738525377843776036876594174009583169908361922660419415167323762722845160049617520288762100141415145810903796591678590997386492366364973605895884008097821769689766411487966503668759881741621753444680202015331188998364053296086880494603130250929559517281545278364760469696391115351714887782831080990922230423770374520502664588300325495535628763145518281722590004478049047040179988077087684451748737050756603713734981916476436851964830161999857363877537594824646013177748336091061885496764887657258423013090326843710118173884614691281026933128099622372456629837239741286083395449083280251421429557630687382398859582231971852719186348298119427748202928194739518214218497931861460297174123830337910967455983334766349150252435743473777788059353257425981625614535295405619699220864848999037701651696148752073424619477656931338671320480080018423390104139802178718558568179981594216065963564268811958921881188116276768209802984673837547936937932201234358280049568660441247868316670662897346626905389181707054434021632008147698587636701228505901679195988659810493062772671392639554616025205034063660505272784875602686512750757699649229119802081934288650392388025560338262525805764635994725349167416080318551292868966903094383084133113019646532651279684388918318134524420784593084139697974715157859848057587658092326037106892869856029556336373863414812587546857036724664331807743787147576750543209813351500106878436477258406177438779838494398649309644369314492084660540021137747204484083117</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Because $\text{msg}$ often smaller than $N$, implies that $\text{msg}^3 &lt; N_0.N_1.N_2$. It means $X$ is actually a cube of $\text{msg}$. Finding cube root is not a difficult thing.</p>
+<p>Here is the code:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">gmpy2</span> <span class="kn">import</span> <span class="n">iroot</span><span class="p">,</span> <span class="n">mpz</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">msg</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">iroot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="mi">3</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Result:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">msg</span> <span class="o">=</span> <span class="mi">48534444686873161182574697497336314995656992153964328461894579635799174570722712541778100003911806341865825223329480115948469360443131218557724075361309533300378183123100075057498598100390824126471882247827056628640667808363839368575164770733553375958867511139975728748089626969562878340145431126308087978326782398491678767867040538037898739053133507896578097391480355355983172307219249891222712670624633243622636961127021032655734955592299536372338798068923968213925641445821911218460085435788525169065588374108336253789008257798862010532871464158651010248491177509558576872525747872221271356846282522071900724373</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="unpad-the-message">Unpad the message</h2>
+<p>Although there&rsquo;re randomization in this unpadding scheme, I quickly recognize that it allows me to set the seed, so the random function is not random anymore. We know the seed, we know all!</p>
+<p>I will act like an amateur reversed engineer, read what the code does and do reversely hehe. For visualization, I draw a process for my code:</p>
+<img src='process.png' alt="Process" width="1000"/>
+<p>Here is my code:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">msg</span> <span class="o">=</span> <span class="n">long_to_bytes</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">masked_seed</span> <span class="o">=</span> <span class="n">msg</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span> <span class="mi">1</span> <span class="o">+</span> <span class="p">(</span><span class="n">hLen</span><span class="o">//</span><span class="mi">8</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl"><span class="n">maskedDB</span> <span class="o">=</span> <span class="n">msg</span><span class="p">[</span><span class="mi">1</span> <span class="o">+</span> <span class="n">hLen</span><span class="o">//</span><span class="mi">8</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl"><span class="n">seedmask</span> <span class="o">=</span> <span class="n">MGF</span><span class="p">(</span><span class="n">bytes_to_long</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="n">maskedDB</span><span class="p">)),</span> <span class="n">hLen</span> <span class="o">//</span> <span class="mi">8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">seed</span> <span class="o">=</span> <span class="p">[</span><span class="n">masked_seed</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">^</span> <span class="n">seedmask</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">hLen</span> <span class="o">//</span> <span class="mi">8</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl"><span class="n">mask</span> <span class="o">=</span> <span class="n">MGF</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="n">seed</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">maskedDB</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">DB</span> <span class="o">=</span> <span class="p">[</span><span class="n">maskedDB</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">^</span> <span class="n">mask</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">maskedDB</span><span class="p">))]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="n">DB</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Unfortunately, it didn&rsquo;t work:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">b&#34;\xa2+\x14\x9e1\x8e\xa4\xb5h \xa8\x80\x9b?\xae\xe3\xe1L\xfc\xbb\x9cB_\xb3P\x19\xcb\xbfy\xe54&#39;\xd2~\x98C \xcd\x03\xf0\xd3\x82K\x05\xfeT\xbc\xe4\xcc\xf5V6}\x1ds\xe9@)_o\xea\xd2\xbb\x00\x7f\xd9\xcd\xef5\xe3\x88\x00#p41\xc9wG\xdbKl\xd233\x83&#39;\x13#\x1c\x97\xc1_\xd0xn\x0b\xd8p\x89_\xde\x98\xcb\xb0o\xd6J\xb8\x1cC\xad\xa2\x9bEe\x0f\xf1\x81\xfd\xa6G\xc7S\x1d&amp;b\xe8\x0b5\xea\x10\x9av\x95\xe0\xa5t=\xdd^?\xa4.\x1cd\x0bm=\x8b\x0bS\x1aK\xff\xbf\xd1\x02\n\x82\xd4B\x17B*kBGP\xbfN\xd3C!\x01\x82\x05\xee_(\xd9m]\xd1^\x9bkF\xa0,\xe6\x17X\xc6\xee\x9a\xab\xa6\x96\xfd\x08\x16\xaf\xce\x89\xeb\xd8\x8av\xbb\xe0\xda\xe4\x00\xad\x08\xect\x87jE3&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>That is because the line <code>EM = [0] + masked_seed + maskedDB</code>. When we add prefix <code>0x00</code>, convert it to <code>long</code> and then convert it back to <code>bytes</code>, the prefix will gone.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">7</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># b&#39;\x00\x05\x07&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="n">bytes_to_long</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">long_to_bytes</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># b&#39;\x05\x07&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>So I add one null byte to my <code>msg</code> manually: <code>msg = [0] + list(msg)</code>. Here is the result after re-run the script:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">b&#34;\xe3\xb0\xc4B\x98\xfc\x1c\x14\x9a\xfb\xf4\xc8\x99o\xb9$&#39;\xaeA\xe4d\x9b\x93L\xa4\x95\x99\x1bxR\xb8U\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01ENO{com3_to_Nu1lCon_bu1_do_n0t_tel1_B0b}&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The flag is at the end of this output: <code>ENO{com3_to_Nu1lCon_bu1_do_n0t_tel1_B0b}</code></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This is an easy crypto challange, but consisting RE technique makes it is valuable with me.</p></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2023-03-10&#32;12:17:30>Updated on 2023-03-10&nbsp;</span>
+      </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/dashaus165blog/collector/index.md" title="Read Markdown" class="link-to-markdown">Read Markdown</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://haopham23.github.io/dashaus165blog/collector/" data-title="nullcon HackIM CTF Berlin 2023: collector" data-hashtags="writeups,crypto,nullcon2023"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://haopham23.github.io/dashaus165blog/collector/" data-hashtag="writeups"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/dashaus165blog/tags/writeups/' class="post-tag">writeups</a><a href='/dashaus165blog/tags/crypto/' class="post-tag">crypto</a><a href='/dashaus165blog/tags/nullcon2023/' class="post-tag">nullcon2023</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/dashaus165blog/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/dashaus165blog/breaking-news/" class="post-nav-item" rel="prev" title="nullcon HackIM CTF Berlin 2023: breaking news"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>nullcon HackIM CTF Berlin 2023: breaking news</a></div>
+</div>
+</article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.109.0">Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.18-RC"><img class="fixit-icon" src="/dashaus165blog/fixit.min.svg" alt="FixIt logo" />&nbsp;FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">Copy, right? - 2023</span><span class="author" itemprop="copyrightHolder">
+              <a href="https://haopham23.github.io/dashaus165blog/"target="_blank" rel="external nofollow noopener noreferrer">dasHaus165</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='Total visitors'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='Total visits'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div></div><a href="https://github.com/HaoPham23" title="Find me on GitHub"target="_blank" rel="external nofollow" class="github-corner right d-none-mobile"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/dashaus165blog/lib/katex/katex.min.css"><link rel="stylesheet" href="/dashaus165blog/lib/cookieconsent/cookieconsent.min.css"><script src="/dashaus165blog/lib/autocomplete/autocomplete.min.js" defer></script><script src="/dashaus165blog/lib/lunr/lunr.min.js" defer></script><script src="/dashaus165blog/lib/sharer/sharer.min.js" async defer></script><script src="/dashaus165blog/lib/typeit/index.umd.js" defer></script><script src="/dashaus165blog/lib/katex/katex.min.js" defer></script><script src="/dashaus165blog/lib/katex/auto-render.min.js" defer></script><script src="/dashaus165blog/lib/katex/mhchem.min.js" defer></script><script src="/dashaus165blog/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"typeit-header-desktop":"Blog","typeit-header-title-mobile":"Blog"},"enablePWA":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/dashaus165blog/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"typeit-header-desktop":["typeit-header-desktop"],"typeit-header-title-mobile":["typeit-header-title-mobile"]},"duration":-1,"speed":50}};</script><script src="/dashaus165blog/js/theme.min.js" defer></script></body>
+</html>

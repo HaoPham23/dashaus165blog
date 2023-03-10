@@ -4,7 +4,15 @@
     <link>https://haopham23.github.io/dashaus165blog/tags/nullcon2023/</link>
     <description>nullcon2023 - Tag - dasHaus165&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator><managingEditor>hao.pham165@gmail.com (dasHaus165)</managingEditor>
-      <webMaster>hao.pham165@gmail.com (dasHaus165)</webMaster><lastBuildDate>Fri, 10 Mar 2023 09:49:37 &#43;0700</lastBuildDate><atom:link href="https://haopham23.github.io/dashaus165blog/tags/nullcon2023/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>hao.pham165@gmail.com (dasHaus165)</webMaster><lastBuildDate>Fri, 10 Mar 2023 12:17:30 &#43;0700</lastBuildDate><atom:link href="https://haopham23.github.io/dashaus165blog/tags/nullcon2023/" rel="self" type="application/rss+xml" /><item>
+  <title>nullcon HackIM CTF Berlin 2023: collector</title>
+  <link>https://haopham23.github.io/dashaus165blog/collector/</link>
+  <pubDate>Fri, 10 Mar 2023 12:17:30 &#43;0700</pubDate>
+  <author>dasHaus165</author>
+  <guid>https://haopham23.github.io/dashaus165blog/collector/</guid>
+  <description><![CDATA[<p>A writeup on nullcon CTF 2023 - Collector</p>]]></description>
+</item>
+<item>
   <title>nullcon HackIM CTF Berlin 2023: breaking news</title>
   <link>https://haopham23.github.io/dashaus165blog/breaking-news/</link>
   <pubDate>Fri, 10 Mar 2023 09:49:37 &#43;0700</pubDate>
