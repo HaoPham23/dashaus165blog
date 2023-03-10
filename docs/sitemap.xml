@@ -2,14 +2,7 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>https://haopham23.github.io/dashaus165blog/categories/</loc><lastmod>2023-03-10T12:17:30&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://haopham23.github.io/dashaus165blog/tags/crypto/</loc><lastmod>2023-03-10T12:17:30&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://haopham23.github.io/dashaus165blog/</loc><lastmod>2023-03-10T12:17:30&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://haopham23.github.io/dashaus165blog/collector/</loc><lastmod>2023-03-10T12:17:30&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://haopham23.github.io/dashaus165blog/tags/nullcon2023/</loc><lastmod>2023-03-10T12:17:30&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://haopham23.github.io/dashaus165blog/posts/</loc><lastmod>2023-03-10T12:17:30&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://haopham23.github.io/dashaus165blog/tags/</loc><lastmod>2023-03-10T12:17:30&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://haopham23.github.io/dashaus165blog/tags/writeups/</loc><lastmod>2023-03-10T12:17:30&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://haopham23.github.io/dashaus165blog/categories/writeups/</loc><lastmod>2023-03-10T12:17:30&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://haopham23.github.io/dashaus165blog/breaking-news/</loc><lastmod>2023-03-10T09:49:37&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://haopham23.github.io/dashaus165blog/about/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
+      <loc>https://haopham23.github.io/dashaus165blog/about/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>https://haopham23.github.io/dashaus165blog/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>https://haopham23.github.io/dashaus165blog/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+      <loc>https://haopham23.github.io/dashaus165blog/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>

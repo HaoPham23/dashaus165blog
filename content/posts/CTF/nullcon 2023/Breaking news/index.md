@@ -2,7 +2,7 @@
 title: "nullcon HackIM CTF Berlin 2023: breaking news" 
 subtitle:
 date: 2023-03-10T09:49:37+07:00
-draft: false
+draft: true
 description: "A writeup on nullcon CTF 2023 - Breaking news"
 keywords:
 license:
