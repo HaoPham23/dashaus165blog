@@ -9,9 +9,11 @@ license:
 comment: false
 weight: 0
 tags:
-  - RSA
+  - writeups
+  - crypto
   - nullcon2023
 categories:
+  - writeups
   - nullcon2023
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -119,7 +121,7 @@ Result:
 b'ENO{n3ver_reus3_your_pr1mes_4_a_'
 ```
 ## The last half
-The last half is not that easy. I tried the same attack and it failed. But maybe we can exploit some properties from known key `(e1, d1)` in the previous section. Fortunately, it does! Based on [the paper]{http://www.ams.org/notices/199902/boneh.pdf} of **Prof. Dan Boneh**, the factorization of $N$ can be computed in polynomial time when we're given one pair `(e, d)`. 
+The last half is not that easy. I tried the same attack and it failed. But maybe we can exploit some properties from known key `(e1, d1)` in the previous section. Fortunately, it does! Based on [this paper](http://www.ams.org/notices/199902/boneh.pdf) of **Prof. Dan Boneh**, the factorization of $N$ can be computed in polynomial time when we're given one pair `(e, d)`. 
 
 One implementation of this fast-factor algorithm is available in [this repo](https://gist.github.com/AntonKueltz/73c28f5a2ceb5f37a3db471068a36a68). I made a tiny optimization in operator to make it works with big numbers, you can try to guess what it is, hehe. 
 

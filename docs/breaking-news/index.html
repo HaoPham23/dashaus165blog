@@ -7,11 +7,11 @@
     <meta name="robots" content="noodp" />
     <title>nullcon HackIM CTF Berlin 2023: breaking news - dasHaus165&#39;s Blog</title><meta name="author" content="dasHaus165">
 <meta name="author-link" content="https://haopham23.github.io/dashaus165blog/">
-<meta name="description" content="A writeup on nullcon CTF 2023 - Breaking news" /><meta name="keywords" content='RSA, nullcon2023' /><meta itemprop="name" content="nullcon HackIM CTF Berlin 2023: breaking news">
+<meta name="description" content="A writeup on nullcon CTF 2023 - Breaking news" /><meta name="keywords" content='writeups, crypto, nullcon2023' /><meta itemprop="name" content="nullcon HackIM CTF Berlin 2023: breaking news">
 <meta itemprop="description" content="A writeup on nullcon CTF 2023 - Breaking news"><meta itemprop="datePublished" content="2023-03-10T09:49:37+07:00" />
 <meta itemprop="dateModified" content="2023-03-10T09:49:37+07:00" />
 <meta itemprop="wordCount" content="524">
-<meta itemprop="keywords" content="RSA,nullcon2023," /><meta property="og:title" content="nullcon HackIM CTF Berlin 2023: breaking news" />
+<meta itemprop="keywords" content="writeups,crypto,nullcon2023," /><meta property="og:title" content="nullcon HackIM CTF Berlin 2023: breaking news" />
 <meta property="og:description" content="A writeup on nullcon CTF 2023 - Breaking news" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://haopham23.github.io/dashaus165blog/breaking-news/" /><meta property="article:section" content="posts" />
@@ -32,7 +32,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https:\/\/haopham23.github.io\/dashaus165blog\/breaking-news\/"
-    },"genre": "posts","keywords": "RSA, nullcon2023","wordcount":  524 ,
+    },"genre": "posts","keywords": "writeups, crypto, nullcon2023","wordcount":  524 ,
     "url": "https:\/\/haopham23.github.io\/dashaus165blog\/breaking-news\/","datePublished": "2023-03-10T09:49:37+07:00","dateModified": "2023-03-10T09:49:37+07:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -163,7 +163,7 @@
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://haopham23.github.io/dashaus165blog/" title="Author"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
     dasHaus165</a></span>
-          <span class="post-category">included in <a href="/dashaus165blog/categories/nullcon2023/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> nullcon2023</a></span></div>
+          <span class="post-category">included in <a href="/dashaus165blog/categories/writeups/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> writeups</a>&ensp;<a href="/dashaus165blog/categories/nullcon2023/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> nullcon2023</a></span></div>
       <div class="post-meta-line"><span title=2023-03-10&#32;09:49:37><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-10">2023-03-10</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 524 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 3 minutes</span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
         <div class="details-summary toc-title">
@@ -334,7 +334,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="the-last-half">The last half</h2>
-<p>The last half is not that easy. I tried the same attack and it failed. But maybe we can exploit some properties from known key <code>(e1, d1)</code> in the previous section. Fortunately, it does! Based on [the paper]{http://www.ams.org/notices/199902/boneh.pdf} of <strong>Prof. Dan Boneh</strong>, the factorization of $N$ can be computed in polynomial time when we&rsquo;re given one pair <code>(e, d)</code>.</p>
+<p>The last half is not that easy. I tried the same attack and it failed. But maybe we can exploit some properties from known key <code>(e1, d1)</code> in the previous section. Fortunately, it does! Based on <a href="http://www.ams.org/notices/199902/boneh.pdf"target="_blank" rel="external nofollow noopener noreferrer">this paper</a> of <strong>Prof. Dan Boneh</strong>, the factorization of $N$ can be computed in polynomial time when we&rsquo;re given one pair <code>(e, d)</code>.</p>
 <p>One implementation of this fast-factor algorithm is available in <a href="https://gist.github.com/AntonKueltz/73c28f5a2ceb5f37a3db471068a36a68"target="_blank" rel="external nofollow noopener noreferrer">this repo</a>. I made a tiny optimization in operator to make it works with big numbers, you can try to guess what it is, hehe.</p>
 <p>Here is the code:</p>
 <div class="highlight"><div class="chroma">
@@ -374,15 +374,15 @@
     <div class="post-info-line">
       <div class="post-info-md"><span><a href="/dashaus165blog/breaking-news/index.md" title="Read Markdown" class="link-to-markdown">Read Markdown</a></span></div>
       <div class="post-info-share">
-        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://haopham23.github.io/dashaus165blog/breaking-news/" data-title="nullcon HackIM CTF Berlin 2023: breaking news" data-hashtags="RSA,nullcon2023"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
-  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://haopham23.github.io/dashaus165blog/breaking-news/" data-hashtag="RSA"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://haopham23.github.io/dashaus165blog/breaking-news/" data-title="nullcon HackIM CTF Berlin 2023: breaking news" data-hashtags="writeups,crypto,nullcon2023"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://haopham23.github.io/dashaus165blog/breaking-news/" data-hashtag="writeups"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
   </span>
       </div>
     </div>
   </div>
 
   <div class="post-info-more">
-    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/dashaus165blog/tags/rsa/' class="post-tag">RSA</a><a href='/dashaus165blog/tags/nullcon2023/' class="post-tag">nullcon2023</a></section>
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/dashaus165blog/tags/writeups/' class="post-tag">writeups</a><a href='/dashaus165blog/tags/crypto/' class="post-tag">crypto</a><a href='/dashaus165blog/tags/nullcon2023/' class="post-tag">nullcon2023</a></section>
     <section>
       <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/dashaus165blog/">Home</a></span>
     </section>
