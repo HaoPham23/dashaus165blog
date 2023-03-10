@@ -13,8 +13,7 @@ tags:
   - crypto
   - nullcon2023
 categories:
-  - writeups
-  - nullcon2023
+  - Writeups
 hiddenFromHomePage: false
 hiddenFromSearch: false
 summary:
