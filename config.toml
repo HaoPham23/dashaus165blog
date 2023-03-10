@@ -1,4 +1,5 @@
 theme = "FixIt"
+title = "dasHaus165's Blog"
 baseURL = "https://haopham23.github.io/dashaus165blog"
 publishDir = "docs"
 defaultContentLanguage = "en"
@@ -168,7 +169,7 @@ defaultContentLanguage = "en"
     # For advanced use, see parameter `params.customFilePath.footer`
     custom = ""
     #  whether to show Hugo and theme info
-    hugo = false
+    hugo = true
     #  whether to show copyright info
     copyright = true
     #  whether to show the author
@@ -475,7 +476,7 @@ defaultContentLanguage = "en"
       Twitter = true
       Facebook = true
       Linkedin = false
-      Whatsapp = true
+      Whatsapp = false
       Pinterest = false
       Tumblr = false
       HackerNews = false
@@ -483,19 +484,19 @@ defaultContentLanguage = "en"
       VK = false
       Buffer = false
       Xing = false
-      Line = true
+      Line = false
       Instapaper = false
       Pocket = false
       Digg = false
       Stumbleupon = false
       Flipboard = false
-      Weibo = true
+      Weibo = false
       Renren = false
-      Myspace = true
-      Blogger = true
+      Myspace = false
+      Blogger = false
       Baidu = false
       Odnoklassniki = false
-      Evernote = true
+      Evernote = false
       Skype = false
       Trello = false
       Mix = false

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>nullcon HackIM CTF Berlin 2023: breaking news - dasHaus165&#39;s Blog</title><meta name="author" content="dasHaus165">
+<meta name="author-link" content="https://haopham23.github.io/dashaus165blog/">
+<meta name="description" content="A writeup on nullcon CTF 2023 - Breaking news" /><meta name="keywords" content='RSA, nullcon2023' /><meta itemprop="name" content="nullcon HackIM CTF Berlin 2023: breaking news">
+<meta itemprop="description" content="A writeup on nullcon CTF 2023 - Breaking news"><meta itemprop="datePublished" content="2023-03-10T09:49:37+07:00" />
+<meta itemprop="dateModified" content="2023-03-10T09:49:37+07:00" />
+<meta itemprop="wordCount" content="524">
+<meta itemprop="keywords" content="RSA,nullcon2023," /><meta property="og:title" content="nullcon HackIM CTF Berlin 2023: breaking news" />
+<meta property="og:description" content="A writeup on nullcon CTF 2023 - Breaking news" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://haopham23.github.io/dashaus165blog/breaking-news/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-10T09:49:37+07:00" />
+<meta property="article:modified_time" content="2023-03-10T09:49:37+07:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="nullcon HackIM CTF Berlin 2023: breaking news"/>
+<meta name="twitter:description" content="A writeup on nullcon CTF 2023 - Breaking news"/>
+<meta name="application-name" content="dasHaus165&#39;s Blog">
+<meta name="apple-mobile-web-app-title" content="dasHaus165&#39;s Blog"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/dashaus165blog/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/dashaus165blog/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/dashaus165blog/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/dashaus165blog/apple-touch-icon.png"><link rel="mask-icon" href="/dashaus165blog/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/dashaus165blog/site.webmanifest"><link rel="canonical" href="https://haopham23.github.io/dashaus165blog/breaking-news/" /><link rel="prev" href="https://haopham23.github.io/dashaus165blog/eigenvalues_and_eigenvectors/" /><link rel="stylesheet" href="/dashaus165blog/css/style.min.css"><link rel="stylesheet" href="/dashaus165blog/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/dashaus165blog/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "nullcon HackIM CTF Berlin 2023: breaking news",
+    "inLanguage": "",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/haopham23.github.io\/dashaus165blog\/breaking-news\/"
+    },"genre": "posts","keywords": "RSA, nullcon2023","wordcount":  524 ,
+    "url": "https:\/\/haopham23.github.io\/dashaus165blog\/breaking-news\/","datePublished": "2023-03-10T09:49:37+07:00","dateModified": "2023-03-10T09:49:37+07:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "dasHaus165"
+      },"description": "A writeup on nullcon CTF 2023 - Breaking news"
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper" data-github-corner="right">
+    <div class="header-title">
+      <a href="/dashaus165blog/" title="dasHaus165&#39;s Blog"><img loading="lazy" src="/dashaus165blog/avatar.png" srcset="/dashaus165blog/avatar.png, /dashaus165blog/avatar.png 1.5x, /dashaus165blog/avatar.png 2x" sizes="auto" data-title="dasHaus165&#39;s Blog" data-alt="dasHaus165&#39;s Blog" class="logo" style="background: url(/dashaus165blog/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span id="typeit-header-desktop" class="typeit"></span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/dashaus165blog/posts/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/dashaus165blog/categories/"
+                
+                
+              ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/dashaus165blog/tags/"
+                
+                
+              ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/dashaus165blog/about/"
+                
+                
+              ><i class="fa-solid fa-id-card fa-fw fa-sm" aria-hidden="true"></i> About</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/dashaus165blog/" title="dasHaus165&#39;s Blog"><img loading="lazy" src="/dashaus165blog/avatar.png" srcset="/dashaus165blog/avatar.png, /dashaus165blog/avatar.png 1.5x, /dashaus165blog/avatar.png 2x" sizes="auto" data-title="/dashaus165blog/avatar.png" data-alt="/dashaus165blog/avatar.png" class="logo" style="background: url(/dashaus165blog/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span id="typeit-header-title-mobile" class="typeit"></span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/dashaus165blog/posts/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/dashaus165blog/categories/"
+                  
+                  
+                ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/dashaus165blog/tags/"
+                  
+                  
+                ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/dashaus165blog/about/"
+                  
+                  
+                ><i class="fa-solid fa-id-card fa-fw fa-sm" aria-hidden="true"></i> About</a></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="normal"><aside class="toc" id="toc-auto"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX">
+        <span>nullcon HackIM CTF Berlin 2023: breaking news</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://haopham23.github.io/dashaus165blog/" title="Author"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+    dasHaus165</a></span>
+          <span class="post-category">included in <a href="/dashaus165blog/categories/nullcon2023/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> nullcon2023</a></span></div>
+      <div class="post-meta-line"><span title=2023-03-10&#32;09:49:37><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-10">2023-03-10</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 524 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 3 minutes</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-first-half">The first half</a></li>
+    <li><a href="#the-last-half">The last half</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>A writeup on nullcon CTF 2023 - Breaking news</p>
+<div class="details admonition note open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i>Challenge Information<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content"><ul>
+<li><strong>Given materials:</strong> <a href="https://ctf.nullcon.net/files/3a179c12d2e6aa2d9ce5d57182783e49/breaking_news.zip?token=eyJ1c2VyX2lkIjoxNDkyLCJ0ZWFtX2lkIjpudWxsLCJmaWxlX2lkIjo1OH0.ZAqdbQ.nM7TF5m5P4TFNWdzO8y8JJEbBD0"target="_blank" rel="external nofollow noopener noreferrer">Get it here!</a></li>
+<li><strong>Description:</strong> Alice started to encrypt the flag, but realised halfway she was unhappy with her key. So she created a new one.</li>
+<li><strong>Category:</strong> Crypto</li>
+</ul>
+</div>
+    </div>
+  </div>
+<p>The encyption code is shown below:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.PublicKey</span> <span class="kn">import</span> <span class="n">RSA</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">secret</span> <span class="kn">import</span> <span class="n">flag</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.Cipher</span> <span class="kn">import</span> <span class="n">PKCS1_OAEP</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.Util.number</span> <span class="kn">import</span> <span class="n">inverse</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">binascii</span> <span class="kn">import</span> <span class="n">hexlify</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">key1</span> <span class="o">=</span> <span class="n">RSA</span><span class="o">.</span><span class="n">import_key</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;key1.pem&#39;</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">key2</span> <span class="o">=</span> <span class="n">RSA</span><span class="o">.</span><span class="n">import_key</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;key2.pem&#39;</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">msg1</span> <span class="o">=</span> <span class="n">flag</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg2</span> <span class="o">=</span> <span class="n">flag</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cryptor</span> <span class="o">=</span> <span class="n">PKCS1_OAEP</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">key1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">c1</span> <span class="o">=</span> <span class="n">cryptor</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">msg1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">cryptor</span> <span class="o">=</span> <span class="n">PKCS1_OAEP</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">key2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">c2</span> <span class="o">=</span> <span class="n">cryptor</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">msg2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">writer</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;ciphers&#39;</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">writer</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">hexlify</span><span class="p">(</span><span class="n">c1</span><span class="p">)</span> <span class="o">+</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">hexlify</span><span class="p">(</span><span class="n">c2</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">writer</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The ciphertexts:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">c1</span> <span class="o">=</span> <span class="s2">&#34;3b6ccd7fa1de0455945998bc024adc6c2b60ccc8f020cbf024c3d4f98eafdf6a43afd15ec4d9a32f84cb61f7a5462547f2e3622b547c3e9ccb723102805544b373a80f4d252a1081db6d5c5499b222093fd4bb7997c68ab0ed8a9ac3bd0dae64cdfb946da1e311ef6e216ddf2dac14ea3710d5622269f08073598c24a3000a6dd6270ca0db5c304102bc9a5cd104484a2c0ced339121f13499c795de343ad2e655d4ace726654ee9f110e4bee3db95d8e514bd6e658769a01638ff2e9ce954dc09def3b01f6d598ddae2ca9735c8e8f9b71c96984a114084fb0a25b3646481e8c8d4d8adfedc7afad7be7a009c6d12753db4216ab9fd7fc8c37c819aef6a8bce&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">c2</span> <span class="o">=</span> <span class="s2">&#34;998d5eeb0c048ade8cd807cb582b15a7799e8481a7476dbe8e0310b5ffc5161add92539bc0a374333c11f5f2008195782a44e45f2394fe3115af59fbc73ad24c4d084d79ba8e5896b644917335fd9a0e07c1d1d316e50480ba44c67b6fc04a2ce33dbc721768f1f874ff2ce1ec0503a4a7c67d10119ff9f79030459068de24ff24593e16877fd74c5a12d0e64a3d62e61b13c403aad2fe605601e8a097aba99707e305e3125a3c89f3d6beccc2f19a32fdac9ab7df181938b9b80d83a54c9c23ef11affff0fca67ecd9d45c58ece90a44ecd60aff7be05bf97cb554c563a3f9139d99f7c76a07acaaa261b1d6cb41e228fb2aca02ed1c64d468aabb8cfaa9210&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>It seems that the encryption of the first and the last half of <code>flag</code> is not relevant. But at least we should check the public key and the modulus of <code>key1.pem</code> and <code>key2.pem</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.PublicKey</span> <span class="kn">import</span> <span class="n">RSA</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">key1</span> <span class="o">=</span> <span class="n">RSA</span><span class="o">.</span><span class="n">import_key</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;breaking_news\key1.pem&#39;</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">key2</span> <span class="o">=</span> <span class="n">RSA</span><span class="o">.</span><span class="n">import_key</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;breaking_news\key2.pem&#39;</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">e1</span> <span class="o">=</span> <span class="n">key1</span><span class="o">.</span><span class="n">e</span>
+</span></span><span class="line"><span class="cl"><span class="n">e2</span> <span class="o">=</span> <span class="n">key2</span><span class="o">.</span><span class="n">e</span>
+</span></span><span class="line"><span class="cl"><span class="n">n1</span> <span class="o">=</span> <span class="n">key1</span><span class="o">.</span><span class="n">n</span>
+</span></span><span class="line"><span class="cl"><span class="n">n2</span> <span class="o">=</span> <span class="n">key2</span><span class="o">.</span><span class="n">n</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">e1 (bit_length = 2045): 2726678763069742290493975678771854042946997886526658885273589794982550850524484749274268692898909814780790152954912126546903921714367517303032050244891472514523849708519935681313568761427297382724990480371626349446130805480456004417663238567505831802110513475009108333474503714942886902760554023856774744528158730164306665386046820676766827602146514316823937019543742466850364749529076296428648908924805389552335245924389342424467024736023185451341764743413642429057857014342930366786601460889647066379811076861622890568687138322791084455379633576246829677348537342669805283721207716632578516825617674863582898823857
+</span></span><span class="line"><span class="cl">n1 (bit_length = 2048): 22446667384135380364728550075881381726053468195188168013152415796352249451953078762739428049146187827398120100488504055606635548019009256889092903583429161620832130884808020463159053237738268615549212998960185401460575049040129569674912795281010462969369309454450379821434551440286230754665181962106098655531061808191857271372118647412341530534507363035768520018955713235360762429287435263772391386477249961479679573552073377992778864273735159890546438757223394182339510136036600928909879322891169743059815434712294601960066048614718984000476293007036534025674690519367295530441293542361110626472198678166093083778539
+</span></span><span class="line"><span class="cl">e2 (bit_length = 2047): 10256146915389376804733503849378394040226738315438048733908212356423497844689763806899851419713477281451672208599322793619218516307544360848813105274673995810641694951995105185766820550758709887004645074369214964198132251828883683227550638515829482479043992765245534290447294029738255137528007434087457833764737212244291686107900819383665191108248293367869921932616558880407836029541291465648421673321173968994233210416174380468374540776778309365619130742370523864457591882618770539218576302746506646714903352082566770512709919759453487307052199672663455436660181653236413741514850568323328630717846871365400337385289
+</span></span><span class="line"><span class="cl">n2 (bit_length = 2048): 22446667384135380364728550075881381726053468195188168013152415796352249451953078762739428049146187827398120100488504055606635548019009256889092903583429161620832130884808020463159053237738268615549212998960185401460575049040129569674912795281010462969369309454450379821434551440286230754665181962106098655531061808191857271372118647412341530534507363035768520018955713235360762429287435263772391386477249961479679573552073377992778864273735159890546438757223394182339510136036600928909879322891169743059815434712294601960066048614718984000476293007036534025674690519367295530441293542361110626472198678166093083778539
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>There are two things I noticed from these parameters:</p>
+<ol>
+<li>They share the same modulus. This means the fall of one encryption will maybe affect the other one.</li>
+<li>Their public keys are extremely big. Practically, the public keys are just small numbers (such as 655347) for the performance and security. Big public keys often lead to small private keys, make them vulnerable to the Wierner attack.</li>
+</ol>
+<p>I will break them one by one.</p>
+<h2 id="the-first-half">The first half</h2>
+<p>I tried and happily it&rsquo;s broken by the Wiener Attack. For the Wiener Attack, readers should read <a href="https://cryptohack.gitbook.io/cryptobook/untitled/low-private-component-attacks/wieners-attack"target="_blank" rel="external nofollow noopener noreferrer">this</a>.</p>
+<p>Here is the code:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">owiener</span>
+</span></span><span class="line"><span class="cl"><span class="n">N</span> <span class="o">=</span> <span class="n">n1</span>
+</span></span><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">d1</span> <span class="o">=</span> <span class="n">owiener</span><span class="o">.</span><span class="n">attack</span><span class="p">(</span><span class="n">e1</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">k1</span> <span class="o">=</span> <span class="n">RSA</span><span class="o">.</span><span class="n">construct</span><span class="p">((</span><span class="n">N</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">d1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cryptor1</span> <span class="o">=</span> <span class="n">PKCS1_OAEP</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">k1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">c1</span> <span class="o">=</span> <span class="nb">bytes</span><span class="o">.</span><span class="n">fromhex</span><span class="p">(</span><span class="n">c1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">cryptor1</span><span class="o">.</span><span class="n">decrypt</span><span class="p">(</span><span class="n">c1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Failed&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The library <code>owiener</code> is in <a href="https://github.com/orisano/owiener"target="_blank" rel="external nofollow noopener noreferrer">this repo</a>.</p>
+<p>Result:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">b&#39;ENO{n3ver_reus3_your_pr1mes_4_a_&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="the-last-half">The last half</h2>
+<p>The last half is not that easy. I tried the same attack and it failed. But maybe we can exploit some properties from known key <code>(e1, d1)</code> in the previous section. Fortunately, it does! Based on [the paper]{http://www.ams.org/notices/199902/boneh.pdf} of <strong>Prof. Dan Boneh</strong>, the factorization of $N$ can be computed in polynomial time when we&rsquo;re given one pair <code>(e, d)</code>.</p>
+<p>One implementation of this fast-factor algorithm is available in <a href="https://gist.github.com/AntonKueltz/73c28f5a2ceb5f37a3db471068a36a68"target="_blank" rel="external nofollow noopener noreferrer">this repo</a>. I made a tiny optimization in operator to make it works with big numbers, you can try to guess what it is, hehe.</p>
+<p>Here is the code:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">p</span><span class="p">,</span> <span class="n">q</span> <span class="o">=</span> <span class="n">factor</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">d1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">phi</span> <span class="o">=</span> <span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">q</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">d2</span> <span class="o">=</span> <span class="n">inverse</span><span class="p">(</span><span class="n">e2</span><span class="p">,</span> <span class="n">phi</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">k2</span> <span class="o">=</span> <span class="n">RSA</span><span class="o">.</span><span class="n">construct</span><span class="p">((</span><span class="n">N</span><span class="p">,</span> <span class="n">e2</span><span class="p">,</span> <span class="n">d2</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">cryptor2</span> <span class="o">=</span> <span class="n">PKCS1_OAEP</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">k2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">cryptor1</span><span class="o">.</span><span class="n">decrypt</span><span class="p">(</span><span class="n">c1</span><span class="p">)</span> <span class="o">+</span> <span class="n">cryptor2</span><span class="o">.</span><span class="n">decrypt</span><span class="p">(</span><span class="n">c2</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The final result:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">b&#39;ENO{n3ver_reus3_your_pr1mes_4_a_new_k3y_you_have_2_p4y_th3_pr1ce}&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="conclusion">Conclusion</h2>
+<p>This challange is very helpful to me, because it contains many (2) important attacks that I forgot. It&rsquo;s a nice chance to review RSA!</p></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2023-03-10&#32;09:49:37>Updated on 2023-03-10&nbsp;</span>
+      </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/dashaus165blog/breaking-news/index.md" title="Read Markdown" class="link-to-markdown">Read Markdown</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://haopham23.github.io/dashaus165blog/breaking-news/" data-title="nullcon HackIM CTF Berlin 2023: breaking news" data-hashtags="RSA,nullcon2023"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://haopham23.github.io/dashaus165blog/breaking-news/" data-hashtag="RSA"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/dashaus165blog/tags/rsa/' class="post-tag">RSA</a><a href='/dashaus165blog/tags/nullcon2023/' class="post-tag">nullcon2023</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/dashaus165blog/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/dashaus165blog/eigenvalues_and_eigenvectors/" class="post-nav-item" rel="prev" title="Introduction to Finite Fields"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Introduction to Finite Fields</a></div>
+</div>
+</article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.109.0">Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.18-RC"><img class="fixit-icon" src="/dashaus165blog/fixit.min.svg" alt="FixIt logo" />&nbsp;FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">Copy, right? - 2023</span><span class="author" itemprop="copyrightHolder">
+              <a href="https://haopham23.github.io/dashaus165blog/"target="_blank" rel="external nofollow noopener noreferrer">dasHaus165</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='Total visitors'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='Total visits'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div></div><a href="https://github.com/HaoPham23" title="Find me on GitHub"target="_blank" rel="external nofollow" class="github-corner right d-none-mobile"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/dashaus165blog/lib/katex/katex.min.css"><link rel="stylesheet" href="/dashaus165blog/lib/cookieconsent/cookieconsent.min.css"><script src="/dashaus165blog/lib/autocomplete/autocomplete.min.js" defer></script><script src="/dashaus165blog/lib/lunr/lunr.min.js" defer></script><script src="/dashaus165blog/lib/sharer/sharer.min.js" async defer></script><script src="/dashaus165blog/lib/typeit/index.umd.js" defer></script><script src="/dashaus165blog/lib/katex/katex.min.js" defer></script><script src="/dashaus165blog/lib/katex/auto-render.min.js" defer></script><script src="/dashaus165blog/lib/katex/mhchem.min.js" defer></script><script src="/dashaus165blog/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"typeit-header-desktop":"Blog","typeit-header-title-mobile":"Blog"},"enablePWA":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/dashaus165blog/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"typeit-header-desktop":["typeit-header-desktop"],"typeit-header-title-mobile":["typeit-header-title-mobile"]},"duration":-1,"speed":50}};</script><script src="/dashaus165blog/js/theme.min.js" defer></script></body>
+</html>
