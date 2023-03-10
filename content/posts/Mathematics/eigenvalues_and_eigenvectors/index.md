@@ -2,7 +2,7 @@
 title: Introduction to Finite Fields
 subtitle:
 date: 2023-03-02T23:23:22+07:00
-draft: false
+draft: true
 description:
 keywords:
 license:

@@ -84,7 +84,7 @@ msg = 48534444686873161182574697497336314995656992153964328461894579635799174570
 ## Unpad the message
 Although there're randomization in this unpadding scheme, I quickly recognize that it allows me to set the seed, so the random function is not random anymore. We know the seed, we know all!
 
-I will act like an amateur reversed engineer, read what the code does and do reversely hehe. For visualization, I draw a process for my code:
+I will act like an amateur reversed engineer, read what the code does and do reversely hehe. For visualization, I draw the process of reversing:
 
 <img src='process.png' alt="Process" width="1000"/>
 
@@ -105,7 +105,7 @@ Unfortunately, it didn't work:
 ```
 b"\xa2+\x14\x9e1\x8e\xa4\xb5h \xa8\x80\x9b?\xae\xe3\xe1L\xfc\xbb\x9cB_\xb3P\x19\xcb\xbfy\xe54'\xd2~\x98C \xcd\x03\xf0\xd3\x82K\x05\xfeT\xbc\xe4\xcc\xf5V6}\x1ds\xe9@)_o\xea\xd2\xbb\x00\x7f\xd9\xcd\xef5\xe3\x88\x00#p41\xc9wG\xdbKl\xd233\x83'\x13#\x1c\x97\xc1_\xd0xn\x0b\xd8p\x89_\xde\x98\xcb\xb0o\xd6J\xb8\x1cC\xad\xa2\x9bEe\x0f\xf1\x81\xfd\xa6G\xc7S\x1d&b\xe8\x0b5\xea\x10\x9av\x95\xe0\xa5t=\xdd^?\xa4.\x1cd\x0bm=\x8b\x0bS\x1aK\xff\xbf\xd1\x02\n\x82\xd4B\x17B*kBGP\xbfN\xd3C!\x01\x82\x05\xee_(\xd9m]\xd1^\x9bkF\xa0,\xe6\x17X\xc6\xee\x9a\xab\xa6\x96\xfd\x08\x16\xaf\xce\x89\xeb\xd8\x8av\xbb\xe0\xda\xe4\x00\xad\x08\xect\x87jE3"
 ```
-That is because the line `EM = [0] + masked_seed + maskedDB`. When we add prefix `0x00`, convert it to `long` and then convert it back to `bytes`, the prefix will gone.
+That is because of the line `EM = [0] + masked_seed + maskedDB`. When we add prefix `0x00`, convert it to `long` and then convert it back to `bytes`, the prefix will gone.
 ```python
 a = [0] + [5] + [7]
 a = bytes(a)
@@ -123,7 +123,7 @@ b"\xe3\xb0\xc4B\x98\xfc\x1c\x14\x9a\xfb\xf4\xc8\x99o\xb9$'\xaeA\xe4d\x9b\x93L\xa
 The flag is at the end of this output: `ENO{com3_to_Nu1lCon_bu1_do_n0t_tel1_B0b}`
 ## Conclusion
 
-This is an easy crypto challange, but consisting RE technique makes it is valuable with me. 
+This is an easy crypto challange, but consisting RE technique makes it valuable for me. 
 
 ---
 

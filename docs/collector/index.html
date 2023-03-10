@@ -10,7 +10,7 @@
 <meta name="description" content="A writeup on nullcon CTF 2023 - Collector" /><meta name="keywords" content='writeups, crypto, nullcon2023' /><meta itemprop="name" content="nullcon HackIM CTF Berlin 2023: collector">
 <meta itemprop="description" content="A writeup on nullcon CTF 2023 - Collector"><meta itemprop="datePublished" content="2023-03-10T12:17:30+07:00" />
 <meta itemprop="dateModified" content="2023-03-10T12:17:30+07:00" />
-<meta itemprop="wordCount" content="693">
+<meta itemprop="wordCount" content="692">
 <meta itemprop="keywords" content="writeups,crypto,nullcon2023," /><meta property="og:title" content="nullcon HackIM CTF Berlin 2023: collector" />
 <meta property="og:description" content="A writeup on nullcon CTF 2023 - Collector" />
 <meta property="og:type" content="article" />
@@ -32,7 +32,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https:\/\/haopham23.github.io\/dashaus165blog\/collector\/"
-    },"genre": "posts","keywords": "writeups, crypto, nullcon2023","wordcount":  693 ,
+    },"genre": "posts","keywords": "writeups, crypto, nullcon2023","wordcount":  692 ,
     "url": "https:\/\/haopham23.github.io\/dashaus165blog\/collector\/","datePublished": "2023-03-10T12:17:30+07:00","dateModified": "2023-03-10T12:17:30+07:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -164,7 +164,7 @@
       <div class="post-meta-line"><span class="post-author"><a href="https://haopham23.github.io/dashaus165blog/" title="Author"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
     dasHaus165</a></span>
           <span class="post-category">included in <a href="/dashaus165blog/categories/writeups/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Writeups</a></span></div>
-      <div class="post-meta-line"><span title=2023-03-10&#32;12:17:30><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-10">2023-03-10</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 693 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 4 minutes</span>&nbsp;</div>
+      <div class="post-meta-line"><span title=2023-03-10&#32;12:17:30><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-10">2023-03-10</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 692 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 4 minutes</span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
         <div class="details-summary toc-title">
           <span>Contents</span>
@@ -316,7 +316,7 @@
 </div>
 </div><h2 id="unpad-the-message">Unpad the message</h2>
 <p>Although there&rsquo;re randomization in this unpadding scheme, I quickly recognize that it allows me to set the seed, so the random function is not random anymore. We know the seed, we know all!</p>
-<p>I will act like an amateur reversed engineer, read what the code does and do reversely hehe. For visualization, I draw a process for my code:</p>
+<p>I will act like an amateur reversed engineer, read what the code does and do reversely hehe. For visualization, I draw the process of reversing:</p>
 <img src='process.png' alt="Process" width="1000"/>
 <p>Here is my code:</p>
 <div class="highlight"><div class="chroma">
@@ -352,7 +352,7 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">b&#34;\xa2+\x14\x9e1\x8e\xa4\xb5h \xa8\x80\x9b?\xae\xe3\xe1L\xfc\xbb\x9cB_\xb3P\x19\xcb\xbfy\xe54&#39;\xd2~\x98C \xcd\x03\xf0\xd3\x82K\x05\xfeT\xbc\xe4\xcc\xf5V6}\x1ds\xe9@)_o\xea\xd2\xbb\x00\x7f\xd9\xcd\xef5\xe3\x88\x00#p41\xc9wG\xdbKl\xd233\x83&#39;\x13#\x1c\x97\xc1_\xd0xn\x0b\xd8p\x89_\xde\x98\xcb\xb0o\xd6J\xb8\x1cC\xad\xa2\x9bEe\x0f\xf1\x81\xfd\xa6G\xc7S\x1d&amp;b\xe8\x0b5\xea\x10\x9av\x95\xe0\xa5t=\xdd^?\xa4.\x1cd\x0bm=\x8b\x0bS\x1aK\xff\xbf\xd1\x02\n\x82\xd4B\x17B*kBGP\xbfN\xd3C!\x01\x82\x05\xee_(\xd9m]\xd1^\x9bkF\xa0,\xe6\x17X\xc6\xee\x9a\xab\xa6\x96\xfd\x08\x16\xaf\xce\x89\xeb\xd8\x8av\xbb\xe0\xda\xe4\x00\xad\x08\xect\x87jE3&#34;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>That is because the line <code>EM = [0] + masked_seed + maskedDB</code>. When we add prefix <code>0x00</code>, convert it to <code>long</code> and then convert it back to <code>bytes</code>, the prefix will gone.</p>
+</div><p>That is because of the line <code>EM = [0] + masked_seed + maskedDB</code>. When we add prefix <code>0x00</code>, convert it to <code>long</code> and then convert it back to <code>bytes</code>, the prefix will gone.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -384,7 +384,7 @@
 </div>
 </div><p>The flag is at the end of this output: <code>ENO{com3_to_Nu1lCon_bu1_do_n0t_tel1_B0b}</code></p>
 <h2 id="conclusion">Conclusion</h2>
-<p>This is an easy crypto challange, but consisting RE technique makes it is valuable with me.</p></div><div class="post-footer" id="post-footer">
+<p>This is an easy crypto challange, but consisting RE technique makes it valuable for me.</p></div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">

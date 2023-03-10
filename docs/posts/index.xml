@@ -20,14 +20,5 @@
   <guid>https://haopham23.github.io/dashaus165blog/breaking-news/</guid>
   <description><![CDATA[<p>A writeup on nullcon CTF 2023 - Breaking news</p>]]></description>
 </item>
-<item>
-  <title>Introduction to Finite Fields</title>
-  <link>https://haopham23.github.io/dashaus165blog/eigenvalues_and_eigenvectors/</link>
-  <pubDate>Thu, 02 Mar 2023 23:23:22 &#43;0700</pubDate>
-  <author>dasHaus165</author>
-  <guid>https://haopham23.github.io/dashaus165blog/eigenvalues_and_eigenvectors/</guid>
-  <description><![CDATA[NoteThis article is written by chatGPT. This is for catergories testing purpose.Introduction to Finite Fields Finite fields, also known as Galois fields, are algebraic structures that are widely used in many areas of mathematics, including cryptography, coding theory, and number theory. In this article, we will introduce the basics of finite fields and explore some of their properties.
-Definition A finite field is a field that contains a finite number of elements.]]></description>
-</item>
 </channel>
 </rss>
