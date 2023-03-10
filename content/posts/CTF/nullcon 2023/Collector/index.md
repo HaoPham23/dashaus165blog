@@ -2,7 +2,7 @@
 title: "nullcon HackIM CTF Berlin 2023: collector"
 subtitle:
 date: 2023-03-10T12:17:30+07:00
-draft: true
+draft: false
 description: "A writeup on nullcon CTF 2023 - Collector"
 keywords:
 license:
