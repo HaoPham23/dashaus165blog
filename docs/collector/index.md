@@ -6,7 +6,7 @@ A writeup on nullcon CTF 2023 - Collector
 {{< admonition note "Challenge Information" >}}
 * **Given materials:** [Get it here!](https://ctf.nullcon.net/files/ad34e47d2ea3b9c0105e3eb596a78983/collector.zip?token=eyJ1c2VyX2lkIjoxNDkyLCJ0ZWFtX2lkIjpudWxsLCJmaWxlX2lkIjo0Mn0.ZAq-Tw.gAvijOgKDno8j5MDVIwcJLuffGE)
 * **Host:** 52.59.124.14:10005
-* **Description:** Alice started to encrypt the flag, but realised halfway she was unhappy with her key. So she created a new one.
+* **Description:** Bob is hosting a party and invited everyone but me. But all the invitations I can collect are encrypted.
 * **Category:** Crypto
 {{< /admonition >}}
 
@@ -82,9 +82,9 @@ Result:
 msg = 48534444686873161182574697497336314995656992153964328461894579635799174570722712541778100003911806341865825223329480115948469360443131218557724075361309533300378183123100075057498598100390824126471882247827056628640667808363839368575164770733553375958867511139975728748089626969562878340145431126308087978326782398491678767867040538037898739053133507896578097391480355355983172307219249891222712670624633243622636961127021032655734955592299536372338798068923968213925641445821911218460085435788525169065588374108336253789008257798862010532871464158651010248491177509558576872525747872221271356846282522071900724373
 ```
 ## Unpad the message
-Although there're randomization in this unpadding scheme, I quickly recognize that it allows me to set the seed, so the random function is not random anymore. We know the seed, we know all!
+Although there're randomizations in this unpadding scheme, I quickly recognize that it allows me to set the seed, so the random function is not random anymore. We know the seed, we know all!
 
-I will act like an amateur reversed engineer, read what the code does and do reversely hehe. For visualization, I draw the process of reversing:
+I will act like an amateur reverse engineer: just read what the code does and do reversely, hehe. For visualization, I've drawn a process of the reversing:
 
 <img src='process.png' alt="Process" width="1000"/>
 

@@ -186,7 +186,7 @@
       <div class="admonition-content"><ul>
 <li><strong>Given materials:</strong> <a href="https://ctf.nullcon.net/files/ad34e47d2ea3b9c0105e3eb596a78983/collector.zip?token=eyJ1c2VyX2lkIjoxNDkyLCJ0ZWFtX2lkIjpudWxsLCJmaWxlX2lkIjo0Mn0.ZAq-Tw.gAvijOgKDno8j5MDVIwcJLuffGE"target="_blank" rel="external nofollow noopener noreferrer">Get it here!</a></li>
 <li><strong>Host:</strong> 52.59.124.14:10005</li>
-<li><strong>Description:</strong> Alice started to encrypt the flag, but realised halfway she was unhappy with her key. So she created a new one.</li>
+<li><strong>Description:</strong> Bob is hosting a party and invited everyone but me. But all the invitations I can collect are encrypted.</li>
 <li><strong>Category:</strong> Crypto</li>
 </ul>
 </div>
@@ -315,8 +315,8 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="unpad-the-message">Unpad the message</h2>
-<p>Although there&rsquo;re randomization in this unpadding scheme, I quickly recognize that it allows me to set the seed, so the random function is not random anymore. We know the seed, we know all!</p>
-<p>I will act like an amateur reversed engineer, read what the code does and do reversely hehe. For visualization, I draw the process of reversing:</p>
+<p>Although there&rsquo;re randomizations in this unpadding scheme, I quickly recognize that it allows me to set the seed, so the random function is not random anymore. We know the seed, we know all!</p>
+<p>I will act like an amateur reverse engineer: just read what the code does and do reversely, hehe. For visualization, I&rsquo;ve drawn a process of the reversing:</p>
 <img src='process.png' alt="Process" width="1000"/>
 <p>Here is my code:</p>
 <div class="highlight"><div class="chroma">

@@ -138,4 +138,4 @@ The final result:
 b'ENO{n3ver_reus3_your_pr1mes_4_a_new_k3y_you_have_2_p4y_th3_pr1ce}'
 ```
 ## Conclusion
-This challange is very helpful to me, because it contains many (2) important attacks that I forgot. It's a nice chance to review RSA!
+This challange is very helpful to me, because it contains many (2) attacks that I forgot. It's a nice chance to review RSA!
