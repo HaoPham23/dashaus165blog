@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>htb - Tag - dasHaus165&#39;s Blog</title>
+    <link>https://haopham23.github.io/dashaus165blog/tags/htb/</link>
+    <description>htb - Tag - dasHaus165&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator><managingEditor>hao.pham165@gmail.com (dasHaus165)</managingEditor>
+      <webMaster>hao.pham165@gmail.com (dasHaus165)</webMaster><lastBuildDate>Fri, 24 Mar 2023 08:35:18 &#43;0700</lastBuildDate><atom:link href="https://haopham23.github.io/dashaus165blog/tags/htb/" rel="self" type="application/rss+xml" /><item>
+  <title>Cyber Apocalypse 2023: Perfect Synchronization</title>
+  <link>https://haopham23.github.io/dashaus165blog/perfect-synchronization/</link>
+  <pubDate>Fri, 24 Mar 2023 08:35:18 &#43;0700</pubDate>
+  <author>map[avatar:&lt;nil&gt; email:&lt;nil&gt; link:&lt;nil&gt; name:&lt;nil&gt;]</author>
+  <guid>https://haopham23.github.io/dashaus165blog/perfect-synchronization/</guid>
+  <description><![CDATA[<p>A writeup on Perfect Synchronization</p>]]></description>
+</item>
+</channel>
+</rss>

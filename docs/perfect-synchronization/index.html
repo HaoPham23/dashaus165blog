@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Cyber Apocalypse 2023: Perfect Synchronization - dasHaus165&#39;s Blog</title><meta name="author" content="dasHaus165">
+<meta name="author-link" content="https://haopham23.github.io/dashaus165blog/">
+<meta name="description" content="A writeup on Perfect Synchronization" /><meta name="keywords" content='writeups, crypto, htb' /><meta itemprop="name" content="Cyber Apocalypse 2023: Perfect Synchronization">
+<meta itemprop="description" content="A writeup on Perfect Synchronization"><meta itemprop="datePublished" content="2023-03-24T08:35:18+07:00" />
+<meta itemprop="dateModified" content="2023-03-24T08:35:18+07:00" />
+<meta itemprop="wordCount" content="1298">
+<meta itemprop="keywords" content="writeups,crypto,htb," /><meta property="og:title" content="Cyber Apocalypse 2023: Perfect Synchronization" />
+<meta property="og:description" content="A writeup on Perfect Synchronization" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://haopham23.github.io/dashaus165blog/perfect-synchronization/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-24T08:35:18+07:00" />
+<meta property="article:modified_time" content="2023-03-24T08:35:18+07:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Cyber Apocalypse 2023: Perfect Synchronization"/>
+<meta name="twitter:description" content="A writeup on Perfect Synchronization"/>
+<meta name="application-name" content="dasHaus165&#39;s Blog">
+<meta name="apple-mobile-web-app-title" content="dasHaus165&#39;s Blog"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/dashaus165blog/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/dashaus165blog/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/dashaus165blog/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/dashaus165blog/apple-touch-icon.png"><link rel="mask-icon" href="/dashaus165blog/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/dashaus165blog/site.webmanifest"><link rel="canonical" href="https://haopham23.github.io/dashaus165blog/perfect-synchronization/" /><link rel="prev" href="https://haopham23.github.io/dashaus165blog/collector/" /><link rel="stylesheet" href="/dashaus165blog/css/style.min.css"><link rel="stylesheet" href="/dashaus165blog/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/dashaus165blog/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cyber Apocalypse 2023: Perfect Synchronization",
+    "inLanguage": "",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/haopham23.github.io\/dashaus165blog\/perfect-synchronization\/"
+    },"genre": "posts","keywords": "writeups, crypto, htb","wordcount":  1298 ,
+    "url": "https:\/\/haopham23.github.io\/dashaus165blog\/perfect-synchronization\/","datePublished": "2023-03-24T08:35:18+07:00","dateModified": "2023-03-24T08:35:18+07:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "dasHaus165"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper" data-github-corner="right">
+    <div class="header-title">
+      <a href="/dashaus165blog/" title="dasHaus165&#39;s Blog"><img loading="lazy" src="/dashaus165blog/avatar.png" srcset="/dashaus165blog/avatar.png, /dashaus165blog/avatar.png 1.5x, /dashaus165blog/avatar.png 2x" sizes="auto" data-title="dasHaus165&#39;s Blog" data-alt="dasHaus165&#39;s Blog" class="logo" style="background: url(/dashaus165blog/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span id="typeit-header-desktop" class="typeit"></span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/dashaus165blog/posts/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/dashaus165blog/categories/"
+                
+                
+              ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/dashaus165blog/tags/"
+                
+                
+              ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/dashaus165blog/about/"
+                
+                
+              ><i class="fa-solid fa-id-card fa-fw fa-sm" aria-hidden="true"></i> About</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/dashaus165blog/" title="dasHaus165&#39;s Blog"><img loading="lazy" src="/dashaus165blog/avatar.png" srcset="/dashaus165blog/avatar.png, /dashaus165blog/avatar.png 1.5x, /dashaus165blog/avatar.png 2x" sizes="auto" data-title="/dashaus165blog/avatar.png" data-alt="/dashaus165blog/avatar.png" class="logo" style="background: url(/dashaus165blog/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span id="typeit-header-title-mobile" class="typeit"></span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/dashaus165blog/posts/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/dashaus165blog/categories/"
+                  
+                  
+                ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/dashaus165blog/tags/"
+                  
+                  
+                ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/dashaus165blog/about/"
+                  
+                  
+                ><i class="fa-solid fa-id-card fa-fw fa-sm" aria-hidden="true"></i> About</a></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="normal"><aside class="toc" id="toc-auto"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX">
+        <span>Cyber Apocalypse 2023: Perfect Synchronization</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      </span></span>
+          <span class="post-category">included in <a href="/dashaus165blog/categories/writeups/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Writeups</a></span></div>
+      <div class="post-meta-line"><span title=2023-03-24&#32;08:35:18><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-24">2023-03-24</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 1298 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 7 minutes</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#problem-statement">Problem statement</a></li>
+    <li><a href="#initial-analysis">Initial analysis</a>
+      <ul>
+        <li><a href="#the-randomness">The randomness</a></li>
+        <li><a href="#the-aes-encryption-mode">The AES encryption mode</a></li>
+        <li><a href="#just-substitution">Just substitution</a></li>
+      </ul>
+    </li>
+    <li><a href="#solution-method">Solution method</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>A writeup on Perfect Synchronization</p>
+<div class="details admonition note open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i>Challenge Information<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content"><ul>
+<li><strong>Given materials:</strong> <a href="">Get it here!</a></li>
+<li><strong>Description:</strong> The final stage of your initialization sequence is mastering cutting-edge technology tools that can be life-changing. One of these tools is quipqiup, an automated tool for frequency analysis and breaking substitution ciphers. This is the ultimate challenge, simulating the use of AES encryption to protect a message. Can you break it?</li>
+<li><strong>Category:</strong> Crypto - Very Easy</li>
+</ul>
+</div>
+    </div>
+  </div>
+<p>The encyption script is shown below:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">urandom</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">Crypto.Cipher</span> <span class="kn">import</span> <span class="n">AES</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">secret</span> <span class="kn">import</span> <span class="n">MESSAGE</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">assert</span> <span class="nb">all</span><span class="p">([</span><span class="n">x</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span> <span class="ow">or</span> <span class="n">x</span> <span class="ow">in</span> <span class="s1">&#39;</span><span class="si">{_}</span><span class="s1"> &#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">MESSAGE</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Cipher</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">salt</span> <span class="o">=</span> <span class="n">urandom</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">key</span> <span class="o">=</span> <span class="n">urandom</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">cipher</span> <span class="o">=</span> <span class="n">AES</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">AES</span><span class="o">.</span><span class="n">MODE_ECB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">encrypt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">cipher</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">salt</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">message</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cipher</span> <span class="o">=</span> <span class="n">Cipher</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">encrypted</span> <span class="o">=</span> <span class="n">cipher</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">MESSAGE</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">encrypted</span> <span class="o">=</span> <span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">c</span><span class="o">.</span><span class="n">hex</span><span class="p">()</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">encrypted</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;output.txt&#34;</span><span class="p">,</span> <span class="s1">&#39;w+&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">encrypted</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">main</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="problem-statement">Problem statement</h2>
+<p>The Python script defines a <code>Cipher</code> class that generates a random salt and key, then encrypts a message using AES in ECB mode. The encrypted message is written to a file in hexadecimal format. The <code>MESSAGE</code> variable is imported from a separate file. Our mission is to recover the encrypted message and find the flag in it.</p>
+<h2 id="initial-analysis">Initial analysis</h2>
+<h3 id="the-randomness">The randomness</h3>
+<p>The author adds some randomnesses including <code>key</code> and <code>salt</code> to make the encryption more unpredictable. But if you look more closely into it, you will realize that the <code>salt</code> is just initialized once, and be padded for all characters in the message. It means the <code>salt</code> is not too much useful, it just shifts all characters by a constant value.</p>
+<h3 id="the-aes-encryption-mode">The AES encryption mode</h3>
+<p>The author uses EBC mode - the weakest one, to encrypt all <strong>shifted</strong> characters of the message.</p>
+<div class="details admonition note open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i>FYI<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">For anyone who doesn&rsquo;t know about ECB: ECB (Electronic Codebook) is one of the simplest modes of AES encryption, where each block of plaintext is encrypted separately using the same key. In this mode, identical plaintext blocks will be encrypted to identical ciphertext blocks, making it vulnerable to attacks that exploit patterns in the plaintext. Therefore, ECB mode is not recommended for secure communication, and other modes like CBC, CTR, or GCM are preferred. A visualized example is illustrated in <a href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation"target="_blank" rel="external nofollow noopener noreferrer">this wiki</a> to show that AES-ECB mode is not semantically secure.</div>
+    </div>
+  </div>
+<h3 id="just-substitution">Just substitution</h3>
+<p>By the above analysis, we can prove that:</p>
+<p>For every $c_A, c_B \in \text{message}$: $c_A = c_B \Leftrightarrow ECB(c_A + \text{salt}) = ECB(c_B + \text{salt})$</p>
+<p>This means the encryption is just a normal subsitution cipher.</p>
+<h2 id="solution-method">Solution method</h2>
+<p>For simplicity in frequency analyzing, I map every different hex strings in the output file to a character (A-Z, 1-4), noted that identical strings would produce identical characters. By comparing to English Letter Frequency (including space character) table, we may recover some common letters like e, t, i, a, o confidentally. Then, by the reduncancy and meaning of English words, I can recover the entire content and find the flag.</p>
+<h2 id="results">Results</h2>
+<p>After the mapping, here is the encrypted message:
+<div class="details admonition note open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i>Encrypted message<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">ABCDECFGHIJFJKHLMLIMLINJLCOIPFIQRCIAJGQIQRJQIMFIJFHISMTCFILQBCQGRIPAIVBMQQCFIKJFSEJSCIGCBQJMFIKCQQCBLIJFOIGPUNMFJQMPFLIPAIKCQQCBLIPGGEBIVMQRITJBHMFSIABCDECFGMCLIUPBCPTCBIQRCBCIMLIJIGRJBJGQCBMLQMGIOMLQBMNEQMPFIPAIKCQQCBLIQRJQIMLIBPESRKHIQRCILJUCIAPBIJKUPLQIJKKILJUWKCLIPAIQRJQIKJFSEJSCIMFIGBHWQJFJKHLMLIABCDECFGHIJFJKHLMLIJKLPIXFPVFIJLIGPEFQMFSIKCQQCBLIMLIQRCILQEOHIPAIQRCIABCDECFGHIPAIKCQQCBLIPBISBPEWLIPAIKCQQCBLIMFIJIGMWRCBQCYQIQRCIUCQRPOIMLIELCOIJLIJFIJMOIQPINBCJXMFSIGKJLLMGJKIGMWRCBLIABCDECFGHIJFJKHLMLIBCDEMBCLIPFKHIJINJLMGIEFOCBLQJFOMFSIPAIQRCILQJQMLQMGLIPAIQRCIWKJMFQCYQIKJFSEJSCIJFOILPUCIWBPNKCUILPKTMFSILXMKKLIJFOIMAIWCBAPBUCOINHIRJFOIQPKCBJFGCIAPBICYQCFLMTCIKCQQCBINPPXXCCWMFSIOEBMFSIVPBKOIVJBIMMINPQRIQRCINBMQMLRIJFOIQRCIJUCBMGJFLIBCGBEMQCOIGPOCNBCJXCBLINHIWKJGMFSIGBPLLVPBOIWEZZKCLIMFIUJ1PBIFCVLWJWCBLIJFOIBEFFMFSIGPFQCLQLIAPBIVRPIGPEKOILPKTCIQRCUIQRCIAJLQCLQILCTCBJKIPAIQRCIGMWRCBLIELCOINHIQRCIJYMLIWPVCBLIVCBCINBCJXJNKCIELMFSIABCDECFGHIJFJKHLMLIAPBICYJUWKCILPUCIPAIQRCIGPFLEKJBIGMWRCBLIELCOINHIQRCI1JWJFCLCIUCGRJFMGJKIUCQRPOLIPAIKCQQCBIGPEFQMFSIJFOILQJQMLQMGJKIJFJKHLMLISCFCBJKKHIRQN2J3LMUWKC3LENLQMQEQMPF3ML3VCJX4IGJBOIQHWCIUJGRMFCBHIVCBCIAMBLQIELCOIMFIVPBKOIVJBIMMIWPLLMNKHINHIQRCIELIJBUHLILMLIQPOJHIQRCIRJBOIVPBXIPAIKCQQCBIGPEFQMFSIJFOIJFJKHLMLIRJLINCCFIBCWKJGCOINHIGPUWEQCBILPAQVJBCIVRMGRIGJFIGJBBHIPEQILEGRIJFJKHLMLIMFILCGPFOLIVMQRIUPOCBFIGPUWEQMFSIWPVCBIGKJLLMGJKIGMWRCBLIJBCIEFKMXCKHIQPIWBPTMOCIJFHIBCJKIWBPQCGQMPFIAPBIGPFAMOCFQMJKIOJQJIWEZZKCIWEZZKCIWEZZKC</div>
+    </div>
+  </div></p>
+<p>Plotting the histogram of this encrypted message, comparing with the expected frequency, we get:
+<img src='histogram.png' alt="Histogram" width="1000"/></p>
+<p>Here is the script, if you interested in:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">plot_histogram</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">english_freq</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;space&#39;</span><span class="p">:</span> <span class="mf">0.18316895740067898</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span> <span class="mf">0.10266650309881365</span><span class="p">,</span> <span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="mf">0.07516918822929543</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mf">0.0653211522431101</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">:</span> <span class="mf">0.06165021261170107</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">:</span> <span class="mf">0.06109938076429621</span><span class="p">,</span> <span class="s1">&#39;n&#39;</span><span class="p">:</span> <span class="mf">0.05748993391266301</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">:</span> <span class="mf">0.0558094607431706</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">:</span> <span class="mf">0.05501226388301501</span><span class="p">,</span> <span class="s1">&#39;h&#39;</span><span class="p">:</span> <span class="mf">0.0418265243918537</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">:</span> <span class="mf">0.03203162615518401</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">:</span> <span class="mf">0.03123691335535358</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">:</span> <span class="mf">0.02074798285524714</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="mf">0.020576050425919314</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">:</span> <span class="mf">0.019830666456506605</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">:</span> <span class="mf">0.016535714836861396</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">:</span> <span class="mf">0.015818636195592536</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">:</span> <span class="mf">0.014126275726274115</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">:</span> <span class="mf">0.01318902368984632</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mf">0.012614330285168858</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mf">0.010748157780246267</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="mf">0.007961080746834234</span><span class="p">,</span> <span class="s1">&#39;k&#39;</span><span class="p">:</span> <span class="mf">0.005609987561400249</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mf">0.0012367402118007968</span><span class="p">,</span> <span class="s1">&#39;j&#39;</span><span class="p">:</span> <span class="mf">0.0010975645567653538</span><span class="p">,</span> <span class="s1">&#39;q&#39;</span><span class="p">:</span> <span class="mf">0.0010065039671926798</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">:</span> <span class="mf">0.0005273232293542625</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">char_dict</span> <span class="o">=</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">text</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">char_dict</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">char_dict</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">char_dict</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">char_dict</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">char_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">/=</span> <span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># char_dict[key] *= 100</span>
+</span></span><span class="line"><span class="cl">    <span class="n">char_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">char_dict</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># plt.bar(char_dict.keys(), char_dict.values())</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Plot the first subplot</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">char_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">char_dict</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Encrypted message&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency (%)&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Plot the second subplot</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">english_freq</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">english_freq</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;English&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency (%)&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Based on the charts, we can easily find that letter <code>I</code>, <code>C</code> in encrypted message must be <code>space</code> and <code>e</code> in English, respectively. I guess there must be one and only one pair <code>{}</code> in the message for the flag <code>HTB{...}</code>. In the above chart, letter <code>2</code> and <code>4</code> share the smallest frequency, so they must be <code>{</code> and <code>}</code>. Moreover, the 3 characters immediately preceding <code>{</code> must be <code>htb</code>. After that, we got:</p>
+<div class="details admonition note open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i>Message<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">ABeDEeFGH JFJKHLML ML bJLeO PF the AJGt thJt MF JFH SMTeF LtBetGh PA VBMtteF KJFSEJSe GeBtJMF KetteBL JFO GPUbMFJtMPFL PA KetteBL PGGEB VMth TJBHMFS ABeDEeFGMeL UPBePTeB theBe ML J GhJBJGteBMLtMG OMLtBMbEtMPF PA KetteBL thJt ML BPEShKH the LJUe APB JKUPLt JKK LJUWKeL PA thJt KJFSEJSe MF GBHWtJFJKHLML ABeDEeFGH JFJKHLML JKLP XFPVF JL GPEFtMFS KetteBL ML the LtEOH PA the ABeDEeFGH PA KetteBL PB SBPEWL PA KetteBL MF J GMWheBteYt the UethPO ML ELeO JL JF JMO tP bBeJXMFS GKJLLMGJK GMWheBL ABeDEeFGH JFJKHLML BeDEMBeL PFKH J bJLMG EFOeBLtJFOMFS PA the LtJtMLtMGL PA the WKJMFteYt KJFSEJSe JFO LPUe WBPbKeU LPKTMFS LXMKKL JFO MA WeBAPBUeO bH hJFO tPKeBJFGe APB eYteFLMTe KetteB bPPXXeeWMFS OEBMFS VPBKO VJB MM bPth the bBMtMLh JFO the JUeBMGJFL BeGBEMteO GPOebBeJXeBL bH WKJGMFS GBPLLVPBO WEZZKeL MF UJ1PB FeVLWJWeBL JFO BEFFMFS GPFteLtL APB VhP GPEKO LPKTe theU the AJLteLt LeTeBJK PA the GMWheBL ELeO bH the JYML WPVeBL VeBe bBeJXJbKe ELMFS ABeDEeFGH JFJKHLML APB eYJUWKe LPUe PA the GPFLEKJB GMWheBL ELeO bH the 1JWJFeLe UeGhJFMGJK UethPOL PA KetteB GPEFtMFS JFO LtJtMLtMGJK JFJKHLML SeFeBJKKH htb{J3LMUWKe3LEbLtMtEtMPF3ML3VeJX} GJBO tHWe UJGhMFeBH VeBe AMBLt ELeO MF VPBKO VJB MM WPLLMbKH bH the EL JBUHL LML tPOJH the hJBO VPBX PA KetteB GPEFtMFS JFO JFJKHLML hJL beeF BeWKJGeO bH GPUWEteB LPAtVJBe VhMGh GJF GJBBH PEt LEGh JFJKHLML MF LeGPFOL VMth UPOeBF GPUWEtMFS WPVeB GKJLLMGJK GMWheBL JBe EFKMXeKH tP WBPTMOe JFH BeJK WBPteGtMPF APB GPFAMOeFtMJK OJtJ WEZZKe WEZZKe WEZZKe</div>
+    </div>
+  </div>
+<p>The remaining task is to guess the words based on their meanings. Here is the result:</p>
+<div class="details admonition note open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i>Decrypted message<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">frequency analysis is based on the fact that in any giTen stretch of written language certain letters and combinations of letters occur with Tarying frequencies moreoTer there is a characteristic distribution of letters that is roughly the same for almost all samples of that language in cryptanalysis frequency analysis also tnown as counting letters is the study of the frequency of letters or groups of letters in a cipherteYt the method is used as an aid to breating classical ciphers frequency analysis requires only a basic understanding of the statistics of the plainteYt language and some problem solTing stills and if performed by hand tolerance for eYtensiTe letter bootteeping during world war ii both the british and the americans recruited codebreaters by placing crossword puZZles in ma1or newspapers and running contests for who could solTe them the fastest seTeral of the ciphers used by the aYis powers were breatable using frequency analysis for eYample some of the consular ciphers used by the 1apanese mechanical methods of letter counting and statistical analysis generally htb{a_simple_substitution_is_weat} card type machinery were first used in world war ii possibly by the us armys sis today the hard wort of letter counting and analysis has been replaced by computer software which can carry out such analysis in seconds with modern computing power classical ciphers are unlitely to proTide any real protection for confidential data puZZle puZZle puZZle</div>
+    </div>
+  </div>
+<p>The flag is: <code>HTB{a_simple_substitution_is_weat}</code></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This challenge is just a substitution cipher, which is totally insecure against frequency analysis. The random key, salt, AES-ECB is just to make colors :D.</p></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2023-03-24&#32;08:35:18>Updated on 2023-03-24&nbsp;</span>
+      </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/dashaus165blog/perfect-synchronization/index.md" title="Read Markdown" class="link-to-markdown">Read Markdown</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://haopham23.github.io/dashaus165blog/perfect-synchronization/" data-title="Cyber Apocalypse 2023: Perfect Synchronization" data-hashtags="writeups,crypto,htb"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://haopham23.github.io/dashaus165blog/perfect-synchronization/" data-hashtag="writeups"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/dashaus165blog/tags/writeups/' class="post-tag">writeups</a><a href='/dashaus165blog/tags/crypto/' class="post-tag">crypto</a><a href='/dashaus165blog/tags/htb/' class="post-tag">htb</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/dashaus165blog/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/dashaus165blog/collector/" class="post-nav-item" rel="prev" title="nullcon HackIM CTF Berlin 2023: collector"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>nullcon HackIM CTF Berlin 2023: collector</a></div>
+</div>
+</article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.109.0">Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.18-RC"><img class="fixit-icon" src="/dashaus165blog/fixit.min.svg" alt="FixIt logo" />&nbsp;FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">Copy, right? - 2023</span><span class="author" itemprop="copyrightHolder">
+              <a href="https://haopham23.github.io/dashaus165blog/"target="_blank" rel="external nofollow noopener noreferrer">dasHaus165</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='Total visitors'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='Total visits'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div></div><a href="https://github.com/HaoPham23" title="Find me on GitHub"target="_blank" rel="external nofollow" class="github-corner right d-none-mobile"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/dashaus165blog/lib/katex/katex.min.css"><link rel="stylesheet" href="/dashaus165blog/lib/cookieconsent/cookieconsent.min.css"><script src="/dashaus165blog/lib/autocomplete/autocomplete.min.js" defer></script><script src="/dashaus165blog/lib/lunr/lunr.min.js" defer></script><script src="/dashaus165blog/lib/sharer/sharer.min.js" async defer></script><script src="/dashaus165blog/lib/typeit/index.umd.js" defer></script><script src="/dashaus165blog/lib/katex/katex.min.js" defer></script><script src="/dashaus165blog/lib/katex/auto-render.min.js" defer></script><script src="/dashaus165blog/lib/katex/mhchem.min.js" defer></script><script src="/dashaus165blog/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"typeit-header-desktop":"Blog","typeit-header-title-mobile":"Blog"},"enablePWA":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/dashaus165blog/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"typeit-header-desktop":["typeit-header-desktop"],"typeit-header-title-mobile":["typeit-header-title-mobile"]},"duration":-1,"speed":50}};</script><script src="/dashaus165blog/js/theme.min.js" defer></script></body>
+</html>
