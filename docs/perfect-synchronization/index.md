@@ -4,7 +4,7 @@ A writeup on Perfect Synchronization
 <!--more-->
 
 {{< admonition note "Challenge Information" >}}
-* **Given materials:** [Get it here!]()
+* **Given materials:** [Get it here!](https://drive.google.com/drive/folders/1vm-yF-YzL-l18Rf83RwPo2ar0ZjLEehg?usp=sharing)
 * **Description:** The final stage of your initialization sequence is mastering cutting-edge technology tools that can be life-changing. One of these tools is quipqiup, an automated tool for frequency analysis and breaking substitution ciphers. This is the ultimate challenge, simulating the use of AES encryption to protect a message. Can you break it?
 * **Category:** Crypto - Very Easy
 {{< /admonition >}}
@@ -52,18 +52,18 @@ The Python script defines a `Cipher` class that generates a random salt and key,
 The author adds some randomnesses including `key` and `salt` to make the encryption more unpredictable. But if you look more closely into it, you will realize that the `salt` is just initialized once, and be padded for all characters in the message. It means the `salt` is not too much useful, it just shifts all characters by a constant value.
 
 ### The AES encryption mode
-The author uses EBC mode - the weakest one, to encrypt all **shifted** characters of the message. 
+The author uses EBC mode - the weakest mode, to encrypt all **shifted** characters of the message. 
 
 {{< admonition note "FYI" >}}
 For anyone who doesn't know about ECB: ECB (Electronic Codebook) is one of the simplest modes of AES encryption, where each block of plaintext is encrypted separately using the same key. In this mode, identical plaintext blocks will be encrypted to identical ciphertext blocks, making it vulnerable to attacks that exploit patterns in the plaintext. Therefore, ECB mode is not recommended for secure communication, and other modes like CBC, CTR, or GCM are preferred. A visualized example is illustrated in [this wiki](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation) to show that AES-ECB mode is not semantically secure.
 {{< /admonition >}}
 
-### Just substitution
+### Conclusion
 By the above analysis, we can prove that: 
 
 For every $c_A, c_B \in \text{message}$: $c_A = c_B \Leftrightarrow ECB(c_A + \text{salt}) = ECB(c_B + \text{salt})$
 
-This means the encryption is just a normal subsitution cipher. 
+This means the encryption is just a substitution cipher. 
 
 ## Solution method
 
@@ -79,7 +79,7 @@ ABCDECFGHIJFJKHLMLIMLINJLCOIPFIQRCIAJGQIQRJQIMFIJFHISMTCFILQBCQGRIPAIVBMQQCFIKJF
 Plotting the histogram of this encrypted message, comparing with the expected frequency, we get:
 <img src='histogram.png' alt="Histogram" width="1000"/>
 
-Here is the script, if you interested in:
+Here is the script, if you're interested in:
 ```python
 import matplotlib.pyplot as plt
 
@@ -129,6 +129,6 @@ This challenge is just a substitution cipher, which is totally insecure against 
 
 ---
 
-> Author: map[avatar:<nil> email:<nil> link:<nil> name:<nil>]  
+> Author: [dasHaus165](https://haopham23.github.io/dashaus165blog/)  
 > URL: https://haopham23.github.io/dashaus165blog/perfect-synchronization/  
 
