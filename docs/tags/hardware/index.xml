@@ -1,0 +1,32 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>hardware - Tag - dasHaus165&#39;s Blog</title>
+    <link>https://haopham23.github.io/dashaus165blog/tags/hardware/</link>
+    <description>hardware - Tag - dasHaus165&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator><managingEditor>hao.pham165@gmail.com (dasHaus165)</managingEditor>
+      <webMaster>hao.pham165@gmail.com (dasHaus165)</webMaster><lastBuildDate>Tue, 28 Mar 2023 23:37:05 &#43;0700</lastBuildDate><atom:link href="https://haopham23.github.io/dashaus165blog/tags/hardware/" rel="self" type="application/rss+xml" /><item>
+  <title>Cyber Apocalypse 2023: Timed transmission</title>
+  <link>https://haopham23.github.io/dashaus165blog/timed-transmission/</link>
+  <pubDate>Tue, 28 Mar 2023 23:37:05 &#43;0700</pubDate>
+  <author>dasHaus165</author>
+  <guid>https://haopham23.github.io/dashaus165blog/timed-transmission/</guid>
+  <description><![CDATA[<p>A writeup on Timed transmission</p>]]></description>
+</item>
+<item>
+  <title>Cyber Apocalypse 2023: Debug</title>
+  <link>https://haopham23.github.io/dashaus165blog/debug/</link>
+  <pubDate>Tue, 28 Mar 2023 23:05:22 &#43;0700</pubDate>
+  <author>dasHaus165</author>
+  <guid>https://haopham23.github.io/dashaus165blog/debug/</guid>
+  <description><![CDATA[<p>A writeup on Debug</p>]]></description>
+</item>
+<item>
+  <title>Cyber Apocalypse 2023: Critical Flight</title>
+  <link>https://haopham23.github.io/dashaus165blog/critical-flight/</link>
+  <pubDate>Tue, 28 Mar 2023 22:53:07 &#43;0700</pubDate>
+  <author>dasHaus165</author>
+  <guid>https://haopham23.github.io/dashaus165blog/critical-flight/</guid>
+  <description><![CDATA[<p>A writeup on Critical Flight</p>]]></description>
+</item>
+</channel>
+</rss>
